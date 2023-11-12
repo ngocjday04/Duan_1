@@ -1,0 +1,95 @@
+/* Thiết lập các kiểu chung cho trang chính */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f8ff; /* Màu xanh nước biển nhạt */
+}
+
+/* Kiểu cho nút */
+#toggleButton {
+  background-color: #1e90ff; /* Màu nền nút */
+  color: #fff; /* Màu chữ nút */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 2; /* Đảm bảo nút nằm trên cùng */
+}
+.row {
+  text-align: center;
+}
+.mb {
+  text-align: center;
+}
+.row .mb {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+/* Tiêu đề */
+.header {
+  background-color: #1e90ff; /* Màu xanh biển đậm */
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Menu điều hướng bên trái */
+.menu {
+  width: 250px;
+  background-color: #1e90ff; /* Màu xanh biển đậm */
+  position: fixed;
+  top: 0;
+  left: -250px; /* Ẩn ban đầu */
+  height: 100%;
+  padding: 20px;
+  text-align: right; /* Đặt văn bản nằm bên phải */
+  z-index: 1; /* Đảm bảo nút nằm dưới thanh navbar */
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu ul li {
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul li a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 0;
+  transition: background-color 0.3s; /* Hiệu ứng màu nền nổi bật trong 0.3 giây */
+}
+
+/* Khi di chuột vào liên kết */
+.menu ul li a:hover {
+  background-color: #0072e3; /* Màu xanh nước biển nhạt hơn khi hover */
+}
+
+/* Nội dung */
+.content {
+  margin-left: 0; /* Thay đổi giá trị này để hiện hoặc ẩn thanh navbar */
+  padding: 20px;
+  background-color: #fff;
+  text-align: center; /* Đặt văn bản ở giữa */
+}
+
+/* Vị trí nội dung ở giữa trang */
+.content-center {
+  display: inline-block;
+  text-align: left; /* Đặt văn bản ở trái trong nội dung */
+}
+
+/* H1 */
+h1 {
+  color: #1e90ff; /* Màu xanh biển đậm */
+}
+
+/* Thẻ img nằm ở góc bên phải */
