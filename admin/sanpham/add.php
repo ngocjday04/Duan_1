@@ -6,10 +6,10 @@
         <form action="index.php?act=addsp" method="post" enctype="multipart/form-data">
             <div class="row mb">
                 Danh mục : <br><br>
-                <select name="id_danhmuc" id="">
-                    <?php foreach ($danhmuc as $dm) { ?>
-                        <option value="<?= $dm['id'] ?>">
-                            <?= $dm['name'] ?></option>
+                <select name="category_id" id="">
+                    <?php foreach ($categories as $category) { ?>
+                        <option value="<?= $category['category_id'] ?>">
+                            <?= $category['category_name'] ?></option>
                     <?php } ?>
                 </select>
             </div>
@@ -44,5 +44,3 @@
         </form>
     </div>
 </div>
-
-

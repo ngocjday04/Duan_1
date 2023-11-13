@@ -5,11 +5,11 @@
     </div>
     <form action="index.php?act=listsp" method="post">
         <input type="text" name="kyw">
-        <select name="id_danhmuc" id="">
+        <select name="category_id" id="">
             <option value="0" selected>Tất cả</option>
-            <?php foreach ($danhmuc as $dm) { ?>
-                <option value="<?= $dm['id'] ?>">
-                    <?= $dm['name'] ?></option>
+            <?php foreach ($categories as $category) { ?>
+                <option value="<?= $category['category_id'] ?>">
+                    <?= $category['category_name'] ?></option>
             <?php } ?>
         </select>
         <input type="submit" value="Tìm" name="listok" id="">
@@ -24,38 +24,37 @@
                     <th></th>
                     <th>MÃ LOẠI</th>
                     <th>TÊN SẢN PHẨM</th>
-                    <th>GÍA</th>
-                    <th>VIEW</th>
                     <th>HÌNH</th>
+                    <th>GÍA</th>
+                    <th>MÔ Tả</th>
                     <th></th>
                     <TH></TH>
                 </tr>
-                <?php foreach ($sanpham as $sp) {
-                    extract($sp);
-                    $suasp = "index.php?act=suasp&id=$id";
-                    $xoasp = "index.php?act=xoasp&id=$id";
+                <?php foreach ($product as $pro) {
+                    extract($pro);
+                    $suasp = "index.php?act=suasp&iddm=$pro_id";
+                    $xoasp = "index.php?act=xoasp&iddm=$pro_id";
                     $hinhpath = '../upload/' . $image;
                     $img = '<img src="' . $hinhpath . '" width="100px" height="100px>';
                     if (is_file($hinhpath)) {
                         $img = '<img src="' . $hinhpath . '" width="100px" height="100px>';
                     } else {
-                        echo "k tồn tại ảnh";
+                        echo "không tồn tại ảnh";
                     }
 
                     echo
                     '<tr>
                            <td><input type="checkbox" name="" id=""></td>
-                           <td>' . $id . '</td>
-                           <td>' . $name . '</td>
+                           <td>' . $pro_id . '</td>
+                           <td>' . $pro_name . '</td>
+                           <td>' . $image . '</td>
                            <td>' . $price . '</td>
-                           <td>'.$view.'</td>
-                           <td>' . $img . '</td>
+                           <td>' . $description . '</td>
                           <tr colspan="2">
-                          <td><a href="'.$suasp.'"><input type="button" value="Sửa"></a></td>
-                          <td><a href="'.$xoasp.'"><input type="button" value="Xóa"></a></td>
+                          <td><a href="' . $suasp . '"><input type="button" value="Sửa"></a></td>
+                          <td><a href="' . $xoasp . '"><input type="button" value="Xóa"></a></td>
                           </tr>
                        </tr>';
-                    
                 } ?>
 
             </table>
