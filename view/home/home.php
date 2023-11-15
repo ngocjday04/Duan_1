@@ -116,13 +116,16 @@
                     <figure>
                         <span class="ribbon off">-30%</span>
                         <a href="index.php?act=chitietsp">
-                            <img class="img-fluid lazy" src="view/img/products/product_placeholder_square_medium.jpg" data-src="view/img/products/shoes/1.jpg" alt="" />
-                            <img class="img-fluid lazy" src="view/img/products/product_placeholder_square_medium.jpg" data-src="view/img/products/shoes/1_b.jpg" alt="" />
+                            <img class="img-fluid lazy" src="view/img/products/product_placeholder_square_medium.jpg"
+                                data-src="view/img/products/shoes/1.jpg" alt="" />
+                            <img class="img-fluid lazy" src="view/img/products/product_placeholder_square_medium.jpg"
+                                data-src="view/img/products/shoes/1_b.jpg" alt="" />
                         </a>
                         <div data-countdown="2019/05/15" class="countdown"></div>
                     </figure>
                     <div class="rating">
-                        <i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star"></i>
+                        <i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i
+                            class="icon-star voted"></i><i class="icon-star"></i>
                     </div>
                     <a href="index.php?act=chitietsp">
                         <h3>Armor Air x Fear</h3>
@@ -133,13 +136,16 @@
                     </div>
                     <ul>
                         <li>
-                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to favorites"><i class="ti-heart"></i><span>Add to favorites</span></a>
+                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left"
+                                title="Add to favorites"><i class="ti-heart"></i><span>Add to favorites</span></a>
                         </li>
                         <li>
-                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to compare"><i class="ti-control-shuffle"></i><span>Add to compare</span></a>
+                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left"
+                                title="Add to compare"><i class="ti-control-shuffle"></i><span>Add to compare</span></a>
                         </li>
                         <li>
-                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart"><i class="ti-shopping-cart"></i><span>Add to cart</span></a>
+                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left"
+                                title="Add to cart"><i class="ti-shopping-cart"></i><span>Add to cart</span></a>
                         </li>
                     </ul>
                 </div>
@@ -150,13 +156,16 @@
                     <figure>
                         <span class="ribbon off">-30%</span>
                         <a href="index.php?act=chitietsp">
-                            <img class="img-fluid lazy" src="view/img/products/product_placeholder_square_medium.jpg" data-src="view/img/products/shoes/1.jpg" alt="" />
-                            <img class="img-fluid lazy" src="view/img/products/product_placeholder_square_medium.jpg" data-src="view/img/products/shoes/1_b.jpg" alt="" />
+                            <img class="img-fluid lazy" src="view/img/products/product_placeholder_square_medium.jpg"
+                                data-src="view/img/products/shoes/1.jpg" alt="" />
+                            <img class="img-fluid lazy" src="view/img/products/product_placeholder_square_medium.jpg"
+                                data-src="view/img/products/shoes/1_b.jpg" alt="" />
                         </a>
                         <div data-countdown="2019/05/15" class="countdown"></div>
                     </figure>
                     <div class="rating">
-                        <i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star"></i>
+                        <i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i
+                            class="icon-star voted"></i><i class="icon-star"></i>
                     </div>
                     <a href="index.php?act=chitietsp">
                         <h3>Armor Air x Fear</h3>
@@ -167,13 +176,16 @@
                     </div>
                     <ul>
                         <li>
-                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to favorites"><i class="ti-heart"></i><span>Add to favorites</span></a>
+                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left"
+                                title="Add to favorites"><i class="ti-heart"></i><span>Add to favorites</span></a>
                         </li>
                         <li>
-                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to compare"><i class="ti-control-shuffle"></i><span>Add to compare</span></a>
+                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left"
+                                title="Add to compare"><i class="ti-control-shuffle"></i><span>Add to compare</span></a>
                         </li>
                         <li>
-                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart"><i class="ti-shopping-cart"></i><span>Add to cart</span></a>
+                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left"
+                                title="Add to cart"><i class="ti-shopping-cart"></i><span>Add to cart</span></a>
                         </li>
                     </ul>
                 </div>
@@ -184,13 +196,16 @@
                     <figure>
                         <span class="ribbon off">-30%</span>
                         <a href="index.php?act=chitietsp">
-                            <img class="img-fluid lazy" src="view/img/products/product_placeholder_square_medium.jpg" data-src="view/img/products/shoes/1.jpg" alt="" />
-                            <img class="img-fluid lazy" src="view/img/products/product_placeholder_square_medium.jpg" data-src="view/img/products/shoes/1_b.jpg" alt="" />
+                            <img class="img-fluid lazy" src="view/img/products/product_placeholder_square_medium.jpg"
+                                data-src="view/img/products/shoes/1.jpg" alt="" />
+                            <img class="img-fluid lazy" src="view/img/products/product_placeholder_square_medium.jpg"
+                                data-src="view/img/products/shoes/1_b.jpg" alt="" />
                         </a>
                         <div data-countdown="2019/05/15" class="countdown"></div>
                     </figure>
                     <div class="rating">
-                        <i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star"></i>
+                        <i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i
+                            class="icon-star voted"></i><i class="icon-star"></i>
                     </div>
                     <a href="index.php?act=chitietsp">
                         <h3>Armor Air x Fear</h3>
@@ -201,13 +216,16 @@
                     </div>
                     <ul>
                         <li>
-                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to favorites"><i class="ti-heart"></i><span>Add to favorites</span></a>
+                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left"
+                                title="Add to favorites"><i class="ti-heart"></i><span>Add to favorites</span></a>
                         </li>
                         <li>
-                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to compare"><i class="ti-control-shuffle"></i><span>Add to compare</span></a>
+                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left"
+                                title="Add to compare"><i class="ti-control-shuffle"></i><span>Add to compare</span></a>
                         </li>
                         <li>
-                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart"><i class="ti-shopping-cart"></i><span>Add to cart</span></a>
+                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left"
+                                title="Add to cart"><i class="ti-shopping-cart"></i><span>Add to cart</span></a>
                         </li>
                     </ul>
                 </div>
@@ -218,13 +236,16 @@
                     <figure>
                         <span class="ribbon off">-30%</span>
                         <a href="index.php?act=chitietsp">
-                            <img class="img-fluid lazy" src="view/img/products/product_placeholder_square_medium.jpg" data-src="view/img/products/shoes/1.jpg" alt="" />
-                            <img class="img-fluid lazy" src="view/img/products/product_placeholder_square_medium.jpg" data-src="view/img/products/shoes/1_b.jpg" alt="" />
+                            <img class="img-fluid lazy" src="view/img/products/product_placeholder_square_medium.jpg"
+                                data-src="view/img/products/shoes/1.jpg" alt="" />
+                            <img class="img-fluid lazy" src="view/img/products/product_placeholder_square_medium.jpg"
+                                data-src="view/img/products/shoes/1_b.jpg" alt="" />
                         </a>
                         <div data-countdown="2019/05/15" class="countdown"></div>
                     </figure>
                     <div class="rating">
-                        <i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star"></i>
+                        <i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i
+                            class="icon-star voted"></i><i class="icon-star"></i>
                     </div>
                     <a href="index.php?act=chitietsp">
                         <h3>Armor Air x Fear</h3>
@@ -235,13 +256,16 @@
                     </div>
                     <ul>
                         <li>
-                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to favorites"><i class="ti-heart"></i><span>Add to favorites</span></a>
+                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left"
+                                title="Add to favorites"><i class="ti-heart"></i><span>Add to favorites</span></a>
                         </li>
                         <li>
-                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to compare"><i class="ti-control-shuffle"></i><span>Add to compare</span></a>
+                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left"
+                                title="Add to compare"><i class="ti-control-shuffle"></i><span>Add to compare</span></a>
                         </li>
                         <li>
-                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart"><i class="ti-shopping-cart"></i><span>Add to cart</span></a>
+                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left"
+                                title="Add to cart"><i class="ti-shopping-cart"></i><span>Add to cart</span></a>
                         </li>
                     </ul>
                 </div>
@@ -252,13 +276,16 @@
                     <figure>
                         <span class="ribbon off">-30%</span>
                         <a href="index.php?act=chitietsp">
-                            <img class="img-fluid lazy" src="view/img/products/product_placeholder_square_medium.jpg" data-src="view/img/products/shoes/1.jpg" alt="" />
-                            <img class="img-fluid lazy" src="view/img/products/product_placeholder_square_medium.jpg" data-src="view/img/products/shoes/1_b.jpg" alt="" />
+                            <img class="img-fluid lazy" src="view/img/products/product_placeholder_square_medium.jpg"
+                                data-src="view/img/products/shoes/1.jpg" alt="" />
+                            <img class="img-fluid lazy" src="view/img/products/product_placeholder_square_medium.jpg"
+                                data-src="view/img/products/shoes/1_b.jpg" alt="" />
                         </a>
                         <div data-countdown="2019/05/15" class="countdown"></div>
                     </figure>
                     <div class="rating">
-                        <i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star"></i>
+                        <i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i
+                            class="icon-star voted"></i><i class="icon-star"></i>
                     </div>
                     <a href="index.php?act=chitietsp">
                         <h3>Armor Air x Fear</h3>
@@ -269,13 +296,16 @@
                     </div>
                     <ul>
                         <li>
-                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to favorites"><i class="ti-heart"></i><span>Add to favorites</span></a>
+                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left"
+                                title="Add to favorites"><i class="ti-heart"></i><span>Add to favorites</span></a>
                         </li>
                         <li>
-                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to compare"><i class="ti-control-shuffle"></i><span>Add to compare</span></a>
+                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left"
+                                title="Add to compare"><i class="ti-control-shuffle"></i><span>Add to compare</span></a>
                         </li>
                         <li>
-                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart"><i class="ti-shopping-cart"></i><span>Add to cart</span></a>
+                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left"
+                                title="Add to cart"><i class="ti-shopping-cart"></i><span>Add to cart</span></a>
                         </li>
                     </ul>
                 </div>
@@ -286,13 +316,16 @@
                     <figure>
                         <span class="ribbon off">-30%</span>
                         <a href="index.php?act=chitietsp">
-                            <img class="img-fluid lazy" src="view/img/products/product_placeholder_square_medium.jpg" data-src="view/img/products/shoes/1.jpg" alt="" />
-                            <img class="img-fluid lazy" src="view/img/products/product_placeholder_square_medium.jpg" data-src="view/img/products/shoes/1_b.jpg" alt="" />
+                            <img class="img-fluid lazy" src="view/img/products/product_placeholder_square_medium.jpg"
+                                data-src="view/img/products/shoes/1.jpg" alt="" />
+                            <img class="img-fluid lazy" src="view/img/products/product_placeholder_square_medium.jpg"
+                                data-src="view/img/products/shoes/1_b.jpg" alt="" />
                         </a>
                         <div data-countdown="2019/05/15" class="countdown"></div>
                     </figure>
                     <div class="rating">
-                        <i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star"></i>
+                        <i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i
+                            class="icon-star voted"></i><i class="icon-star"></i>
                     </div>
                     <a href="index.php?act=chitietsp">
                         <h3>Armor Air x Fear</h3>
@@ -303,13 +336,16 @@
                     </div>
                     <ul>
                         <li>
-                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to favorites"><i class="ti-heart"></i><span>Add to favorites</span></a>
+                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left"
+                                title="Add to favorites"><i class="ti-heart"></i><span>Add to favorites</span></a>
                         </li>
                         <li>
-                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to compare"><i class="ti-control-shuffle"></i><span>Add to compare</span></a>
+                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left"
+                                title="Add to compare"><i class="ti-control-shuffle"></i><span>Add to compare</span></a>
                         </li>
                         <li>
-                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart"><i class="ti-shopping-cart"></i><span>Add to cart</span></a>
+                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left"
+                                title="Add to cart"><i class="ti-shopping-cart"></i><span>Add to cart</span></a>
                         </li>
                     </ul>
                 </div>
@@ -320,13 +356,16 @@
                     <figure>
                         <span class="ribbon off">-30%</span>
                         <a href="index.php?act=chitietsp">
-                            <img class="img-fluid lazy" src="view/img/products/product_placeholder_square_medium.jpg" data-src="view/img/products/shoes/1.jpg" alt="" />
-                            <img class="img-fluid lazy" src="view/img/products/product_placeholder_square_medium.jpg" data-src="view/img/products/shoes/1_b.jpg" alt="" />
+                            <img class="img-fluid lazy" src="view/img/products/product_placeholder_square_medium.jpg"
+                                data-src="view/img/products/shoes/1.jpg" alt="" />
+                            <img class="img-fluid lazy" src="view/img/products/product_placeholder_square_medium.jpg"
+                                data-src="view/img/products/shoes/1_b.jpg" alt="" />
                         </a>
                         <div data-countdown="2019/05/15" class="countdown"></div>
                     </figure>
                     <div class="rating">
-                        <i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star"></i>
+                        <i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i
+                            class="icon-star voted"></i><i class="icon-star"></i>
                     </div>
                     <a href="index.php?act=chitietsp">
                         <h3>Armor Air x Fear</h3>
@@ -337,13 +376,16 @@
                     </div>
                     <ul>
                         <li>
-                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to favorites"><i class="ti-heart"></i><span>Add to favorites</span></a>
+                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left"
+                                title="Add to favorites"><i class="ti-heart"></i><span>Add to favorites</span></a>
                         </li>
                         <li>
-                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to compare"><i class="ti-control-shuffle"></i><span>Add to compare</span></a>
+                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left"
+                                title="Add to compare"><i class="ti-control-shuffle"></i><span>Add to compare</span></a>
                         </li>
                         <li>
-                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart"><i class="ti-shopping-cart"></i><span>Add to cart</span></a>
+                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left"
+                                title="Add to cart"><i class="ti-shopping-cart"></i><span>Add to cart</span></a>
                         </li>
                     </ul>
                 </div>
@@ -354,13 +396,16 @@
                     <figure>
                         <span class="ribbon off">-30%</span>
                         <a href="index.php?act=chitietsp">
-                            <img class="img-fluid lazy" src="view/img/products/product_placeholder_square_medium.jpg" data-src="view/img/products/shoes/1.jpg" alt="" />
-                            <img class="img-fluid lazy" src="view/img/products/product_placeholder_square_medium.jpg" data-src="view/img/products/shoes/1_b.jpg" alt="" />
+                            <img class="img-fluid lazy" src="view/img/products/product_placeholder_square_medium.jpg"
+                                data-src="view/img/products/shoes/1.jpg" alt="" />
+                            <img class="img-fluid lazy" src="view/img/products/product_placeholder_square_medium.jpg"
+                                data-src="view/img/products/shoes/1_b.jpg" alt="" />
                         </a>
                         <div data-countdown="2019/05/15" class="countdown"></div>
                     </figure>
                     <div class="rating">
-                        <i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star"></i>
+                        <i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i
+                            class="icon-star voted"></i><i class="icon-star"></i>
                     </div>
                     <a href="index.php?act=chitietsp">
                         <h3>Armor Air x Fear</h3>
@@ -371,13 +416,16 @@
                     </div>
                     <ul>
                         <li>
-                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to favorites"><i class="ti-heart"></i><span>Add to favorites</span></a>
+                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left"
+                                title="Add to favorites"><i class="ti-heart"></i><span>Add to favorites</span></a>
                         </li>
                         <li>
-                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to compare"><i class="ti-control-shuffle"></i><span>Add to compare</span></a>
+                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left"
+                                title="Add to compare"><i class="ti-control-shuffle"></i><span>Add to compare</span></a>
                         </li>
                         <li>
-                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart"><i class="ti-shopping-cart"></i><span>Add to cart</span></a>
+                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left"
+                                title="Add to cart"><i class="ti-shopping-cart"></i><span>Add to cart</span></a>
                         </li>
                     </ul>
                 </div>
@@ -402,11 +450,13 @@
                     <span class="ribbon new">New</span>
                     <figure>
                         <a href="index.php?act=chitietsp">
-                            <img class="owl-lazy" src="view/img/products/product_placeholder_square_medium.jpg" data-src="view/img/products/shoes/4.jpg" alt="" />
+                            <img class="owl-lazy" src="view/img/products/product_placeholder_square_medium.jpg"
+                                data-src="view/img/products/shoes/4.jpg" alt="" />
                         </a>
                     </figure>
                     <div class="rating">
-                        <i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star"></i>
+                        <i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i
+                            class="icon-star voted"></i><i class="icon-star"></i>
                     </div>
                     <a href="index.php?act=chitietsp">
                         <h3>ACG React Terra</h3>
@@ -416,13 +466,16 @@
                     </div>
                     <ul>
                         <li>
-                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to favorites"><i class="ti-heart"></i><span>Add to favorites</span></a>
+                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left"
+                                title="Add to favorites"><i class="ti-heart"></i><span>Add to favorites</span></a>
                         </li>
                         <li>
-                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to compare"><i class="ti-control-shuffle"></i><span>Add to compare</span></a>
+                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left"
+                                title="Add to compare"><i class="ti-control-shuffle"></i><span>Add to compare</span></a>
                         </li>
                         <li>
-                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart"><i class="ti-shopping-cart"></i><span>Add to cart</span></a>
+                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left"
+                                title="Add to cart"><i class="ti-shopping-cart"></i><span>Add to cart</span></a>
                         </li>
                     </ul>
                 </div>
@@ -433,11 +486,13 @@
                     <span class="ribbon new">New</span>
                     <figure>
                         <a href="index.php?act=chitietsp">
-                            <img class="owl-lazy" src="view/img/products/product_placeholder_square_medium.jpg" data-src="view/img/products/shoes/4.jpg" alt="" />
+                            <img class="owl-lazy" src="view/img/products/product_placeholder_square_medium.jpg"
+                                data-src="view/img/products/shoes/4.jpg" alt="" />
                         </a>
                     </figure>
                     <div class="rating">
-                        <i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star"></i>
+                        <i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i
+                            class="icon-star voted"></i><i class="icon-star"></i>
                     </div>
                     <a href="index.php?act=chitietsp">
                         <h3>ACG React Terra</h3>
@@ -447,13 +502,16 @@
                     </div>
                     <ul>
                         <li>
-                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to favorites"><i class="ti-heart"></i><span>Add to favorites</span></a>
+                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left"
+                                title="Add to favorites"><i class="ti-heart"></i><span>Add to favorites</span></a>
                         </li>
                         <li>
-                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to compare"><i class="ti-control-shuffle"></i><span>Add to compare</span></a>
+                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left"
+                                title="Add to compare"><i class="ti-control-shuffle"></i><span>Add to compare</span></a>
                         </li>
                         <li>
-                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart"><i class="ti-shopping-cart"></i><span>Add to cart</span></a>
+                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left"
+                                title="Add to cart"><i class="ti-shopping-cart"></i><span>Add to cart</span></a>
                         </li>
                     </ul>
                 </div>
@@ -464,11 +522,13 @@
                     <span class="ribbon new">New</span>
                     <figure>
                         <a href="index.php?act=chitietsp">
-                            <img class="owl-lazy" src="view/img/products/product_placeholder_square_medium.jpg" data-src="view/img/products/shoes/4.jpg" alt="" />
+                            <img class="owl-lazy" src="view/img/products/product_placeholder_square_medium.jpg"
+                                data-src="view/img/products/shoes/4.jpg" alt="" />
                         </a>
                     </figure>
                     <div class="rating">
-                        <i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star"></i>
+                        <i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i
+                            class="icon-star voted"></i><i class="icon-star"></i>
                     </div>
                     <a href="index.php?act=chitietsp">
                         <h3>ACG React Terra</h3>
@@ -478,13 +538,16 @@
                     </div>
                     <ul>
                         <li>
-                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to favorites"><i class="ti-heart"></i><span>Add to favorites</span></a>
+                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left"
+                                title="Add to favorites"><i class="ti-heart"></i><span>Add to favorites</span></a>
                         </li>
                         <li>
-                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to compare"><i class="ti-control-shuffle"></i><span>Add to compare</span></a>
+                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left"
+                                title="Add to compare"><i class="ti-control-shuffle"></i><span>Add to compare</span></a>
                         </li>
                         <li>
-                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart"><i class="ti-shopping-cart"></i><span>Add to cart</span></a>
+                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left"
+                                title="Add to cart"><i class="ti-shopping-cart"></i><span>Add to cart</span></a>
                         </li>
                     </ul>
                 </div>
@@ -495,11 +558,13 @@
                     <span class="ribbon new">New</span>
                     <figure>
                         <a href="index.php?act=chitietsp">
-                            <img class="owl-lazy" src="view/img/products/product_placeholder_square_medium.jpg" data-src="view/img/products/shoes/4.jpg" alt="" />
+                            <img class="owl-lazy" src="view/img/products/product_placeholder_square_medium.jpg"
+                                data-src="view/img/products/shoes/4.jpg" alt="" />
                         </a>
                     </figure>
                     <div class="rating">
-                        <i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star"></i>
+                        <i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i
+                            class="icon-star voted"></i><i class="icon-star"></i>
                     </div>
                     <a href="index.php?act=chitietsp">
                         <h3>ACG React Terra</h3>
@@ -509,13 +574,16 @@
                     </div>
                     <ul>
                         <li>
-                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to favorites"><i class="ti-heart"></i><span>Add to favorites</span></a>
+                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left"
+                                title="Add to favorites"><i class="ti-heart"></i><span>Add to favorites</span></a>
                         </li>
                         <li>
-                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to compare"><i class="ti-control-shuffle"></i><span>Add to compare</span></a>
+                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left"
+                                title="Add to compare"><i class="ti-control-shuffle"></i><span>Add to compare</span></a>
                         </li>
                         <li>
-                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart"><i class="ti-shopping-cart"></i><span>Add to cart</span></a>
+                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left"
+                                title="Add to cart"><i class="ti-shopping-cart"></i><span>Add to cart</span></a>
                         </li>
                     </ul>
                 </div>
@@ -526,11 +594,13 @@
                     <span class="ribbon new">New</span>
                     <figure>
                         <a href="index.php?act=chitietsp">
-                            <img class="owl-lazy" src="view/img/products/product_placeholder_square_medium.jpg" data-src="view/img/products/shoes/4.jpg" alt="" />
+                            <img class="owl-lazy" src="view/img/products/product_placeholder_square_medium.jpg"
+                                data-src="view/img/products/shoes/4.jpg" alt="" />
                         </a>
                     </figure>
                     <div class="rating">
-                        <i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star"></i>
+                        <i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i
+                            class="icon-star voted"></i><i class="icon-star"></i>
                     </div>
                     <a href="index.php?act=chitietsp">
                         <h3>ACG React Terra</h3>
@@ -540,13 +610,16 @@
                     </div>
                     <ul>
                         <li>
-                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to favorites"><i class="ti-heart"></i><span>Add to favorites</span></a>
+                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left"
+                                title="Add to favorites"><i class="ti-heart"></i><span>Add to favorites</span></a>
                         </li>
                         <li>
-                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to compare"><i class="ti-control-shuffle"></i><span>Add to compare</span></a>
+                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left"
+                                title="Add to compare"><i class="ti-control-shuffle"></i><span>Add to compare</span></a>
                         </li>
                         <li>
-                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart"><i class="ti-shopping-cart"></i><span>Add to cart</span></a>
+                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left"
+                                title="Add to cart"><i class="ti-shopping-cart"></i><span>Add to cart</span></a>
                         </li>
                     </ul>
                 </div>

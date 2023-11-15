@@ -27,6 +27,12 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
         case 'binhluan':
             include "view/binhluan/binhluan.php";
             break;
+        case 'trackorder':
+            include "view/kiemtradh/trackorder.php";
+            break;
+        case 'help':
+            include "view/hotro/help.php";
+            break;
         default:
             include "view/home/home.php";
             break;

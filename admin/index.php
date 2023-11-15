@@ -83,16 +83,16 @@ if (isset($_GET['act'])) {
             break;
 
         case 'xoasp':
-            if (isset($_GET['id']) && ($_GET['id'] > 0)) {
+            if (isset($_GET['idsp']) && ($_GET['idsp'] > 0)) {
                 delete_product($_GET['idsp']);
             }
-            $procduct = loadall_product("", 0);
+            $product = loadall_product("", 0);
             include "../admin/sanpham/list.php";
             break;
 
         case "suasp":
-            if (isset($_GET['id']) && ($_GET['id'] > 0)) {
-                $procduct = loadone_product($_GET['idsp']);
+            if (isset($_GET['idsp']) && ($_GET['idsp'] > 0)) {
+                $product = loadone_product($_GET['idsp']);
             }
             $danhmuc = loadall_categories();
             include "../admin/sanpham/update.php";
@@ -101,14 +101,13 @@ if (isset($_GET['act'])) {
         case "updatesp":
             if (isset($_POST['capnhat']) && ($_POST['capnhat'])) {
                 $product_id = $_POST['product_id'];
-                $danhmuctest = $_POST['danhmuctest'];
                 $product_name = $_POST['product_name'];
                 $price = $_POST['price'];
                 $description = $_POST['description'];
                 $file = $_FILES['image'];
                 $image = $file["name"];
                 move_uploaded_file($file['tmp_name'], "../upload/" . $image);
-                update_product($product_id, $product_name, $price, $image, $description, $danhmuctest);
+                update_product($product_id, $product_name, $price, $image, $description);
             }
             $danhmuc = loadall_categories();
             $product = loadall_product("", 0);

@@ -8,7 +8,7 @@ function insert_product($product_id, $product_name, $image, $price, $description
 function delete_product($product_id)
 {
     $sql = "DELETE FROM product WHERE product_id=$product_id";
-    pdo_execute($sql, $product_id);
+    pdo_execute($sql);
 }
 
 function loadall_product_home()
@@ -55,28 +55,26 @@ function load_category_name($iddm)
 
 function loadone_product($product_id)
 {
-    $sql = "SELECT * FROM product WHERE product_id=?";
-    $product = pdo_query_one($sql, [$product_id]);
+    $sql = "SELECT * FROM product WHERE product_id=" . $product_id;
+    $product = pdo_query_one($sql);
     return $product;
 }
 
-function update_product($product_id, $product_name, $price, $image, $description, $danhmuctest)
+function update_product($product_id, $product_name, $price, $image, $description)
 {
-    $params = [$product_name, $price, $description, $danhmuctest, $product_id];
 
     if (!empty($image)) {
-        $sql = "UPDATE product SET product_name=?, price=?, image=?, description=?, category_id=? WHERE product_id=?";
-        $params = array_merge([$image], $params);
+        $sql = "UPDATE product SET product_name=$product_name price=$price, image=$image, description=$description  WHERE product_id=$product_id";
     } else {
-        $sql = "UPDATE product SET product_name=?, price=?, description=?, category_id=? WHERE product_id=?";
+        $sql = "UPDATE product SET product_name=$product_name, price=$price, description=$description WHERE product_id=$product_id";
     }
 
-    pdo_execute($sql, $params);
+    pdo_execute($sql);
 }
 
-function load_product_cungloai($product_id, $category_id)
+function load_sanpham_cungloai($product_id, $category_id)
 {
-    $sql = "SELECT * FROM product WHERE category_id=? AND product_id!=?";
-    $listproduct = pdo_query($sql, [$category_id, $product_id]);
+    $sql = "SELECT * FROM product WHERE category_id=" . $category_id . " AND product_id <> " . $product_id;
+    $listproduct = pdo_query($sql);
     return $listproduct;
 }

@@ -66,10 +66,10 @@
                                     <li class="submenu">
                                         <a href="javascript:void(0);" class="show-submenu">Home</a>
                                         <ul>
-                                            <li><a href="index.html">Slider</a></li>
-                                            <li><a href="index-2.html">Video Background</a></li>
-                                            <li><a href="index-3.html">Vertical Slider</a></li>
-                                            <li><a href="index-4.html">GDPR Cookie Bar</a></li>
+                                            <li><a href="index.php">Slider</a></li>
+                                            <li><a href="index.php">Video Background</a></li>
+                                            <li><a href="index.php">Vertical Slider</a></li>
+                                            <li><a href="index.php">GDPR Cookie Bar</a></li>
                                         </ul>
                                     </li>
                                     <li class="megamenu submenu">
@@ -112,14 +112,15 @@
                                                 <div class="col-lg-3">
                                                     <h3>Other pages</h3>
                                                     <ul>
-                                                        <li><a href="cart.html">Cart Page</a></li>
-                                                        <li><a href="checkout.html">Check Out Page</a></li>
-                                                        <li><a href="confirm.html">Confirm Purchase Page</a></li>
-                                                        <li><a href="account.html">Create Account Page</a></li>
-                                                        <li><a href="track-order.html">Track Order</a></li>
-                                                        <li><a href="help.html">Help Page</a></li>
-                                                        <li><a href="help-2.html">Help Page 2</a></li>
-                                                        <li><a href="leave-review.html">Leave a Review</a></li>
+                                                        <li><a href="index.php?act=giohang">Cart Page</a></li>
+                                                        <li><a href="index.php?act=checkout">Check Out Page</a></li>
+                                                        <li><a href="index.php?act=confirm">Confirm Purchase
+                                                                Page</a></li>
+                                                        <li><a href="index.php?act=account.php">Create Account Page</a>
+                                                        </li>
+                                                        <li><a href="index.php?act=trackorder">Track Order</a></li>
+                                                        <li><a href="index.php?act=help">Help Page</a></li>
+                                                        <li><a href="index.php?act=binhluan">Leave a Review</a></li>
                                                     </ul>
                                                 </div>
                                                 <div class="col-lg-3 d-xl-block d-lg-block d-md-none d-sm-none d-none">
@@ -299,7 +300,8 @@
                                             <a href="index.php?act=account" class="btn_1">Sign In or Sign Up</a>
                                             <ul>
                                                 <li>
-                                                    <a href="track-order.html"><i class="ti-truck"></i>Track your
+                                                    <a href="index.php?act=trackorder"><i class="ti-truck"></i>Track
+                                                        your
                                                         Order</a>
                                                 </li>
                                                 <li>

@@ -2,7 +2,6 @@
 
 if (is_array($product)) {
     extract($product);
-    var_dump($product);
 }
 $image_path = '../upload/' . $image;
 
