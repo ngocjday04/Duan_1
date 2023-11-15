@@ -5,16 +5,23 @@
         <div class="row">
             <div class="col-lg-6 magnific-gallery">
                 <p>
-                    <a href="view/img/products/shoes/large/1.jpg" title="Photo title" data-effect="mfp-zoom-in"><img src="view/img/products/shoes/large/1.jpg" alt="" class="img-fluid"></a>
+                    <a href="view/img/products/shoes/large/1.jpg" title="Photo title" data-effect="mfp-zoom-in"><img
+                            src="view/img/products/shoes/large/1.jpg" alt="" class="img-fluid"></a>
                 </p>
                 <p>
-                    <a href="view/img/products/shoes/large/2.jpg" title="Photo title" data-effect="mfp-zoom-in"><img src="view/img/products/product_placeholder_square_medium.jpg" data-src="img/products/shoes/large/2.jpg" alt="" class="img-fluid lazy"></a>
+                    <a href="view/img/products/shoes/large/2.jpg" title="Photo title" data-effect="mfp-zoom-in"><img
+                            src="view/img/products/product_placeholder_square_medium.jpg"
+                            data-src="img/products/shoes/large/2.jpg" alt="" class="img-fluid lazy"></a>
                 </p>
                 <p>
-                    <a href="view/img/products/shoes/large/3.jpg" title="Photo title" data-effect="mfp-zoom-in"><img src="view/img/products/product_placeholder_square_medium.jpg" data-src="img/products/shoes/large/3.jpg" alt="" class="img-fluid lazy"></a>
+                    <a href="view/img/products/shoes/large/3.jpg" title="Photo title" data-effect="mfp-zoom-in"><img
+                            src="view/img/products/product_placeholder_square_medium.jpg"
+                            data-src="img/products/shoes/large/3.jpg" alt="" class="img-fluid lazy"></a>
                 </p>
                 <p>
-                    <a href="view/img/products/shoes/large/4.jpg" title="Photo title" data-effect="mfp-zoom-in"><img src="view/img/products/product_placeholder_square_medium.jpg" data-src="img/products/shoes/large/4.jpg" alt="" class="img-fluid lazy"></a>
+                    <a href="view/img/products/shoes/large/4.jpg" title="Photo title" data-effect="mfp-zoom-in"><img
+                            src="view/img/products/product_placeholder_square_medium.jpg"
+                            data-src="img/products/shoes/large/4.jpg" alt="" class="img-fluid lazy"></a>
                 </p>
             </div>
             <div class="col-lg-6" id="sidebar_fixed">
@@ -28,7 +35,8 @@
                 <!-- /page_header -->
                 <div class="prod_info">
                     <h1>Armor Air X Fear</h1>
-                    <span class="rating"><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star"></i><em>4
+                    <span class="rating"><i class="icon-star voted"></i><i class="icon-star voted"></i><i
+                            class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star"></i><em>4
                             reviews</em></span>
                     <p><small>SKU: MTKRY-001</small><br>Sed ex labitur adolescens scriptorem. Te saepe verear tibique
                         sed. Et wisi ridens vix, lorem iudico blandit mel cu. Ex vel sint zril oportere, amet wisi
@@ -49,7 +57,9 @@
                             </div>
                         </div>
                         <div class="row">
-                            <label class="col-xl-5 col-lg-5 col-md-6 col-6"><strong>Size</strong> - Size Guide <a href="#0" data-bs-toggle="modal" data-bs-target="#size-modal"><i class="ti-help-alt"></i></a></label>
+                            <label class="col-xl-5 col-lg-5 col-md-6 col-6"><strong>Size</strong> - Size Guide <a
+                                    href="#0" data-bs-toggle="modal" data-bs-target="#size-modal"><i
+                                        class="ti-help-alt"></i></a></label>
                             <div class="col-xl-4 col-lg-5 col-md-6 col-6">
                                 <div class="custom-select-form">
                                     <select class="wide">
@@ -72,7 +82,8 @@
                     </div>
                     <div class="row">
                         <div class="col-lg-5 col-md-6">
-                            <div class="price_main"><span class="new_price">$148.00</span><span class="percentage">-20%</span> <span class="old_price">$160.00</span></div>
+                            <div class="price_main"><span class="new_price">$148.00</span><span
+                                    class="percentage">-20%</span> <span class="old_price">$160.00</span></div>
                         </div>
                         <div class="col-lg-4 col-md-6">
                             <div class="btn_add_to_cart"><a href="index.php?act=giohang" class="btn_1">Add to Cart</a>
@@ -117,7 +128,8 @@
                 <div id="pane-A" class="card tab-pane fade show active" role="tabpanel" aria-labelledby="tab-A">
                     <div class="card-header" role="tab" id="heading-A">
                         <h5 class="mb-0">
-                            <a class="collapsed" data-bs-toggle="collapse" href="#collapse-A" aria-expanded="false" aria-controls="collapse-A">
+                            <a class="collapsed" data-bs-toggle="collapse" href="#collapse-A" aria-expanded="false"
+                                aria-controls="collapse-A">
                                 Description
                             </a>
                         </h5>
@@ -172,7 +184,8 @@
                 <div id="pane-B" class="card tab-pane fade" role="tabpanel" aria-labelledby="tab-B">
                     <div class="card-header" role="tab" id="heading-B">
                         <h5 class="mb-0">
-                            <a class="collapsed" data-bs-toggle="collapse" href="#collapse-B" aria-expanded="false" aria-controls="collapse-B">
+                            <a class="collapsed" data-bs-toggle="collapse" href="#collapse-B" aria-expanded="false"
+                                aria-controls="collapse-B">
                                 Reviews
                             </a>
                         </h5>
@@ -183,7 +196,9 @@
                                 <div class="col-lg-6">
                                     <div class="review_content">
                                         <div class="clearfix add_bottom_10">
-                                            <span class="rating"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><em>5.0/5.0</em></span>
+                                            <span class="rating"><i class="icon-star"></i><i class="icon-star"></i><i
+                                                    class="icon-star"></i><i class="icon-star"></i><i
+                                                    class="icon-star"></i><em>5.0/5.0</em></span>
                                             <em>Published 54 minutes ago</em>
                                         </div>
                                         <h4>"Commpletely satisfied"</h4>
@@ -196,7 +211,9 @@
                                 <div class="col-lg-6">
                                     <div class="review_content">
                                         <div class="clearfix add_bottom_10">
-                                            <span class="rating"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star empty"></i><i class="icon-star empty"></i><em>4.0/5.0</em></span>
+                                            <span class="rating"><i class="icon-star"></i><i class="icon-star"></i><i
+                                                    class="icon-star"></i><i class="icon-star empty"></i><i
+                                                    class="icon-star empty"></i><em>4.0/5.0</em></span>
                                             <em>Published 1 day ago</em>
                                         </div>
                                         <h4>"Always the best"</h4>
@@ -211,7 +228,9 @@
                                 <div class="col-lg-6">
                                     <div class="review_content">
                                         <div class="clearfix add_bottom_10">
-                                            <span class="rating"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star empty"></i><em>4.5/5.0</em></span>
+                                            <span class="rating"><i class="icon-star"></i><i class="icon-star"></i><i
+                                                    class="icon-star"></i><i class="icon-star"></i><i
+                                                    class="icon-star empty"></i><em>4.5/5.0</em></span>
                                             <em>Published 3 days ago</em>
                                         </div>
                                         <h4>"Outstanding"</h4>
@@ -224,7 +243,9 @@
                                 <div class="col-lg-6">
                                     <div class="review_content">
                                         <div class="clearfix add_bottom_10">
-                                            <span class="rating"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><em>5.0/5.0</em></span>
+                                            <span class="rating"><i class="icon-star"></i><i class="icon-star"></i><i
+                                                    class="icon-star"></i><i class="icon-star"></i><i
+                                                    class="icon-star"></i><em>5.0/5.0</em></span>
                                             <em>Published 4 days ago</em>
                                         </div>
                                         <h4>"Excellent"</h4>
@@ -234,7 +255,8 @@
                                 </div>
                             </div>
                             <!-- /row -->
-                            <p class="text-end"><a href="leave-review.html" class="btn_1">Leave a review</a></p>
+                            <p class="text-end"><a href="index.php?act=binhluan.php" class="btn_1">Leave a review</a>
+                            </p>
                         </div>
                         <!-- /card-body -->
                     </div>
@@ -256,10 +278,12 @@
                     <span class="ribbon new">New</span>
                     <figure>
                         <a href="product-detail-1.html">
-                            <img class="owl-lazy" src="img/products/product_placeholder_square_medium.jpg" data-src="img/products/shoes/4.jpg" alt="">
+                            <img class="owl-lazy" src="img/products/product_placeholder_square_medium.jpg"
+                                data-src="img/products/shoes/4.jpg" alt="">
                         </a>
                     </figure>
-                    <div class="rating"><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star"></i></div>
+                    <div class="rating"><i class="icon-star voted"></i><i class="icon-star voted"></i><i
+                            class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star"></i></div>
                     <a href="product-detail-1.html">
                         <h3>ACG React Terra</h3>
                     </a>
@@ -267,10 +291,13 @@
                         <span class="new_price">$110.00</span>
                     </div>
                     <ul>
-                        <li><a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to favorites"><i class="ti-heart"></i><span>Add to favorites</span></a></li>
-                        <li><a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to compare"><i class="ti-control-shuffle"></i><span>Add to compare</span></a>
+                        <li><a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left"
+                                title="Add to favorites"><i class="ti-heart"></i><span>Add to favorites</span></a></li>
+                        <li><a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left"
+                                title="Add to compare"><i class="ti-control-shuffle"></i><span>Add to compare</span></a>
                         </li>
-                        <li><a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart"><i class="ti-shopping-cart"></i><span>Add to cart</span></a></li>
+                        <li><a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left"
+                                title="Add to cart"><i class="ti-shopping-cart"></i><span>Add to cart</span></a></li>
                     </ul>
                 </div>
                 <!-- /grid_item -->
@@ -281,10 +308,12 @@
                     <span class="ribbon new">New</span>
                     <figure>
                         <a href="product-detail-1.html">
-                            <img class="owl-lazy" src="img/products/product_placeholder_square_medium.jpg" data-src="img/products/shoes/5.jpg" alt="">
+                            <img class="owl-lazy" src="img/products/product_placeholder_square_medium.jpg"
+                                data-src="img/products/shoes/5.jpg" alt="">
                         </a>
                     </figure>
-                    <div class="rating"><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star"></i></div>
+                    <div class="rating"><i class="icon-star voted"></i><i class="icon-star voted"></i><i
+                            class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star"></i></div>
                     <a href="product-detail-1.html">
                         <h3>Air Zoom Alpha</h3>
                     </a>
@@ -292,10 +321,13 @@
                         <span class="new_price">$140.00</span>
                     </div>
                     <ul>
-                        <li><a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to favorites"><i class="ti-heart"></i><span>Add to favorites</span></a></li>
-                        <li><a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to compare"><i class="ti-control-shuffle"></i><span>Add to compare</span></a>
+                        <li><a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left"
+                                title="Add to favorites"><i class="ti-heart"></i><span>Add to favorites</span></a></li>
+                        <li><a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left"
+                                title="Add to compare"><i class="ti-control-shuffle"></i><span>Add to compare</span></a>
                         </li>
-                        <li><a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart"><i class="ti-shopping-cart"></i><span>Add to cart</span></a></li>
+                        <li><a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left"
+                                title="Add to cart"><i class="ti-shopping-cart"></i><span>Add to cart</span></a></li>
                     </ul>
                 </div>
                 <!-- /grid_item -->
@@ -306,10 +338,12 @@
                     <span class="ribbon hot">Hot</span>
                     <figure>
                         <a href="product-detail-1.html">
-                            <img class="owl-lazy" src="img/products/product_placeholder_square_medium.jpg" data-src="img/products/shoes/8.jpg" alt="">
+                            <img class="owl-lazy" src="img/products/product_placeholder_square_medium.jpg"
+                                data-src="img/products/shoes/8.jpg" alt="">
                         </a>
                     </figure>
-                    <div class="rating"><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star"></i></div>
+                    <div class="rating"><i class="icon-star voted"></i><i class="icon-star voted"></i><i
+                            class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star"></i></div>
                     <a href="product-detail-1.html">
                         <h3>Air Color 720</h3>
                     </a>
@@ -317,10 +351,13 @@
                         <span class="new_price">$120.00</span>
                     </div>
                     <ul>
-                        <li><a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to favorites"><i class="ti-heart"></i><span>Add to favorites</span></a></li>
-                        <li><a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to compare"><i class="ti-control-shuffle"></i><span>Add to compare</span></a>
+                        <li><a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left"
+                                title="Add to favorites"><i class="ti-heart"></i><span>Add to favorites</span></a></li>
+                        <li><a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left"
+                                title="Add to compare"><i class="ti-control-shuffle"></i><span>Add to compare</span></a>
                         </li>
-                        <li><a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart"><i class="ti-shopping-cart"></i><span>Add to cart</span></a></li>
+                        <li><a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left"
+                                title="Add to cart"><i class="ti-shopping-cart"></i><span>Add to cart</span></a></li>
                     </ul>
                 </div>
                 <!-- /grid_item -->
@@ -331,10 +368,12 @@
                     <span class="ribbon off">-30%</span>
                     <figure>
                         <a href="product-detail-1.html">
-                            <img class="owl-lazy" src="img/products/product_placeholder_square_medium.jpg" data-src="img/products/shoes/2.jpg" alt="">
+                            <img class="owl-lazy" src="img/products/product_placeholder_square_medium.jpg"
+                                data-src="img/products/shoes/2.jpg" alt="">
                         </a>
                     </figure>
-                    <div class="rating"><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star"></i></div>
+                    <div class="rating"><i class="icon-star voted"></i><i class="icon-star voted"></i><i
+                            class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star"></i></div>
                     <a href="product-detail-1.html">
                         <h3>Okwahn II</h3>
                     </a>
@@ -343,10 +382,13 @@
                         <span class="old_price">$170.00</span>
                     </div>
                     <ul>
-                        <li><a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to favorites"><i class="ti-heart"></i><span>Add to favorites</span></a></li>
-                        <li><a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to compare"><i class="ti-control-shuffle"></i><span>Add to compare</span></a>
+                        <li><a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left"
+                                title="Add to favorites"><i class="ti-heart"></i><span>Add to favorites</span></a></li>
+                        <li><a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left"
+                                title="Add to compare"><i class="ti-control-shuffle"></i><span>Add to compare</span></a>
                         </li>
-                        <li><a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart"><i class="ti-shopping-cart"></i><span>Add to cart</span></a></li>
+                        <li><a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left"
+                                title="Add to cart"><i class="ti-shopping-cart"></i><span>Add to cart</span></a></li>
                     </ul>
                 </div>
                 <!-- /grid_item -->
@@ -357,10 +399,12 @@
                     <span class="ribbon off">-50%</span>
                     <figure>
                         <a href="product-detail-1.html">
-                            <img class="owl-lazy" src="img/products/product_placeholder_square_medium.jpg" data-src="img/products/shoes/3.jpg" alt="">
+                            <img class="owl-lazy" src="img/products/product_placeholder_square_medium.jpg"
+                                data-src="img/products/shoes/3.jpg" alt="">
                         </a>
                     </figure>
-                    <div class="rating"><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star"></i></div>
+                    <div class="rating"><i class="icon-star voted"></i><i class="icon-star voted"></i><i
+                            class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star"></i></div>
                     <a href="product-detail-1.html">
                         <h3>Air Wildwood ACG</h3>
                     </a>
@@ -369,10 +413,13 @@
                         <span class="old_price">$155.00</span>
                     </div>
                     <ul>
-                        <li><a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to favorites"><i class="ti-heart"></i><span>Add to favorites</span></a></li>
-                        <li><a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to compare"><i class="ti-control-shuffle"></i><span>Add to compare</span></a>
+                        <li><a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left"
+                                title="Add to favorites"><i class="ti-heart"></i><span>Add to favorites</span></a></li>
+                        <li><a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left"
+                                title="Add to compare"><i class="ti-control-shuffle"></i><span>Add to compare</span></a>
                         </li>
-                        <li><a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart"><i class="ti-shopping-cart"></i><span>Add to cart</span></a></li>
+                        <li><a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left"
+                                title="Add to cart"><i class="ti-shopping-cart"></i><span>Add to cart</span></a></li>
                     </ul>
                 </div>
                 <!-- /grid_item -->

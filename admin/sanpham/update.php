@@ -1,12 +1,13 @@
 <?php
 
-if (is_array($sanpham)) {
-    extract($sanpham);
+if (is_array($product)) {
+    extract($product);
+    var_dump($product);
 }
-$hinhpath = '../upload/' . $image;
+$image_path = '../upload/' . $image;
 
-if (is_file($hinhpath)) {
-    $img = '<img src="' . $hinhpath . '" width="100px" height="100px>';
+if (is_file($image_path)) {
+    $img = '<img src="' . $image_path . '" width="100px" height="100px>';
 } else {
     $img = '';
 }
@@ -18,10 +19,10 @@ if (is_file($hinhpath)) {
     </div>
     <div class="row formcontent">
         <form action="index.php?act=updatesp" method="post" enctype="multipart/form-data">
-            <input type="hidden" name="id_sanpham" value="<?= $product_id ?>">
+            <input type="hidden" name="product_id" value="<?= $product_id ?>">
             <div class="row mb">
                 Tên sản phẩm : <br><br>
-                <input type="text" name="tensp" value="<?= $product_name ?>">
+                <input type="text" name="product_name" value="<?= $product_name ?>">
             </div>
             <div class="row mb">
                 Hình sản phẩm : <br><br>
@@ -31,11 +32,11 @@ if (is_file($hinhpath)) {
             </div>
             <div class="row mb">
                 Giá sản phẩm : <br><br>
-                <input type="text" name="giasp" value="<?= $price ?>">
+                <input type="text" name="price" value="<?= $price ?>">
             </div>
             <div class="row mb">
                 Mô tả sản phẩm : <br><br>
-                <textarea name="motasp" id="" cols="30" rows="10">"<?= $mota ?>"</textarea>
+                <textarea name="description" id="" cols="30" rows="10">"<?= $description ?>"</textarea>
             </div>
 
             <div class="row mb">

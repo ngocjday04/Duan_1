@@ -1,6 +1,8 @@
 <?php
 include "../model/connect.php";
 include "../model/danhmuc.php";
+include "../model/sanpham.php";
+include "../model/taikhoan.php";
 include "header.php";
 session_start();
 if (isset($_GET['act'])) {
@@ -44,30 +46,28 @@ if (isset($_GET['act'])) {
             break;
 
             // sản phẩm
-        case 'addsp':
-            if (isset($_POST['themmoi']) && ($_POST['themmoi'])) {
-                $id_danhmuc = $_POST['category_id'];
-                $tensp = $_POST['tensp'];
-                $file = $_FILES['image'];
-                $giasp = $_POST['giasp'];
-                $motasp = $_POST['motasp'];
-                $image = $file["name"];
-                move_uploaded_file($file['tmp_name'], "../upload/" . $image);
-
-                // Thêm code xử lý biến category_id ở đây
-                if (isset($_POST['category_id'])) {
-                    $category_id = $_POST['category_id'];
+        case 'createsp':
+            if (isset($_POST['submitsp']) && ($_POST['submitsp'])) {
+                $product_id = $_POST['product_id'];
+                $product_name = $_POST['product_name'];
+                $price = $_POST['price'];
+                $description = $_POST['description'];
+                $image = $_FILES['image']['name'];
+                $target_dir = "../upload/";
+                $target_file = $target_dir . basename($_FILES["image"]["name"]);
+                if (move_uploaded_file($_FILES["image"]["tmp_name"], $target_file)) {
+                    // File uploaded successfully.
                 } else {
-                    $category_id = 0; // Hoặc giá trị mặc định khác tùy theo logic của bạn
+                    // Error uploading the file.
                 }
+                $category_id = isset($_POST['category_id']) ? $_POST['category_id'] : 0;
 
-                insert_product($tensp, $giasp, $image, $motasp, $category_id);
+                insert_product($product_id, $product_name, $image, $price, $description, $category_id);
                 $thongbao = "Thêm thành công";
             }
             $danhmuc = loadall_categories();
             include "../admin/sanpham/add.php";
             break;
-
 
         case 'listsp':
             if (isset($_POST['listok']) && ($_POST['listok'])) {
@@ -77,38 +77,55 @@ if (isset($_GET['act'])) {
                 $kyw = "";
                 $category_id = 0;
             }
+            $product = loadall_product($kyw, $category_id = 0);
             $danhmuc = loadall_categories();
-            $sanpham = loadall_product($kyw, $category_id);
             include "../admin/sanpham/list.php";
             break;
+
         case 'xoasp':
             if (isset($_GET['id']) && ($_GET['id'] > 0)) {
-                delete_product($_GET['iddm']);
+                delete_product($_GET['idsp']);
             }
-            $sanpham = loadall_product("", 0);
+            $procduct = loadall_product("", 0);
             include "../admin/sanpham/list.php";
             break;
+
         case "suasp":
             if (isset($_GET['id']) && ($_GET['id'] > 0)) {
-                $sanpham = loadone_product($_GET['iddm']);
+                $procduct = loadone_product($_GET['idsp']);
             }
             $danhmuc = loadall_categories();
-            include ".../admin/sanpham/update.php";
+            include "../admin/sanpham/update.php";
+            break;
+
         case "updatesp":
             if (isset($_POST['capnhat']) && ($_POST['capnhat'])) {
-                $id = $_POST['id_sanpham'];
+                $product_id = $_POST['product_id'];
                 $danhmuctest = $_POST['danhmuctest'];
-                $tensp = $_POST['tensp'];
-                $giasp = $_POST['giasp'];
-                $motasp = $_POST['motasp'];
+                $product_name = $_POST['product_name'];
+                $price = $_POST['price'];
+                $description = $_POST['description'];
                 $file = $_FILES['image'];
                 $image = $file["name"];
                 move_uploaded_file($file['tmp_name'], "../upload/" . $image);
-                update_product($id, $tensp, $giasp, $image, $motasp, $danhmuctest);
+                update_product($product_id, $product_name, $price, $image, $description, $danhmuctest);
             }
             $danhmuc = loadall_categories();
-            $sanpham = loadall_product("", 0);
-            include "../admin/sanpham/list.php";
+            $product = loadall_product("", 0);
+            break;
+            // tài khoản
+
+        case 'dstk':
+            $listtaikhoan = loadall_taikhoan();
+            include "../admin/taikhoan/list.php";
+            break;
+        case 'xoatk':
+
+            if (isset($_GET['id']) && ($_GET['id'] > 0)) {
+                delete_taikhoan($_GET['id']);
+            }
+            $listtaikhoan = loadall_taikhoan();
+            include "../admin/taikhoan/list.php";
             break;
     }
 } else {

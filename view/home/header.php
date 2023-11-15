@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="Ansonika">
-    <title>Allaia | Bootstrap eCommerce Template - ThemeForest</title>
+    <title>Dự Án 1 _ Nhóm 12</title>
 
     <!-- GOOGLE WEB FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">

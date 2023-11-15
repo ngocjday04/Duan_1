@@ -20,10 +20,12 @@
                     <h3>1. User Info and Billing address</h3>
                     <ul class="nav nav-tabs" id="tab_checkout" role="tablist">
                         <li class="nav-item">
-                            <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#tab_1" role="tab" aria-controls="tab_1" aria-selected="true">Register</a>
+                            <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#tab_1" role="tab"
+                                aria-controls="tab_1" aria-selected="true">Register</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#tab_2" role="tab" aria-controls="tab_2" aria-selected="false">Login</a>
+                            <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#tab_2" role="tab"
+                                aria-controls="tab_2" aria-selected="false">Login</a>
                         </li>
                     </ul>
                     <div class="tab-content checkout">
@@ -122,14 +124,16 @@
                             <hr>
                         </div>
                         <!-- /tab_1 -->
-                        <div class="tab-pane fade" id="tab_2" role="tabpanel" aria-labelledby="tab_2" style="position: relative;">
+                        <div class="tab-pane fade" id="tab_2" role="tabpanel" aria-labelledby="tab_2"
+                            style="position: relative;">
                             <a href="#0" class="social_bt facebook">Login con Facebook</a>
                             <a href="#0" class="social_bt google">Login con Google</a>
                             <div class="form-group">
                                 <input type="email" class="form-control" placeholder="Email">
                             </div>
                             <div class="form-group">
-                                <input type="password" class="form-control" placeholder="Password" name="password_in" id="password_in">
+                                <input type="password" class="form-control" placeholder="Password" name="password_in"
+                                    id="password_in">
                             </div>
                             <div class="clearfix add_bottom_15">
                                 <div class="checkboxes float-start">
@@ -142,10 +146,12 @@
                             </div>
                             <div id="forgot_pw">
                                 <div class="form-group">
-                                    <input type="email" class="form-control" name="email_forgot" id="email_forgot" placeholder="Type your email">
+                                    <input type="email" class="form-control" name="email_forgot" id="email_forgot"
+                                        placeholder="Type your email">
                                 </div>
                                 <p>A new password will be sent shortly.</p>
-                                <div class="text-center"><input type="submit" value="Reset Password" class="btn_1"></div>
+                                <div class="text-center"><input type="submit" value="Reset Password" class="btn_1">
+                                </div>
                             </div>
                             <hr>
                             <input type="submit" class="btn_1 full-width" value="Login">
@@ -160,25 +166,29 @@
                     <h3>2. Payment and Shipping</h3>
                     <ul>
                         <li>
-                            <label class="container_radio">Credit Card<a href="#0" class="info" data-bs-toggle="modal" data-bs-target="#payments_method"></a>
+                            <label class="container_radio">Credit Card<a href="#0" class="info" data-bs-toggle="modal"
+                                    data-bs-target="#payments_method"></a>
                                 <input type="radio" name="payment" checked>
                                 <span class="checkmark"></span>
                             </label>
                         </li>
                         <li>
-                            <label class="container_radio">Paypal<a href="#0" class="info" data-bs-toggle="modal" data-bs-target="#payments_method"></a>
+                            <label class="container_radio">Paypal<a href="#0" class="info" data-bs-toggle="modal"
+                                    data-bs-target="#payments_method"></a>
                                 <input type="radio" name="payment">
                                 <span class="checkmark"></span>
                             </label>
                         </li>
                         <li>
-                            <label class="container_radio">Cash on delivery<a href="#0" class="info" data-bs-toggle="modal" data-bs-target="#payments_method"></a>
+                            <label class="container_radio">Cash on delivery<a href="#0" class="info"
+                                    data-bs-toggle="modal" data-bs-target="#payments_method"></a>
                                 <input type="radio" name="payment">
                                 <span class="checkmark"></span>
                             </label>
                         </li>
                         <li>
-                            <label class="container_radio">Bank Transfer<a href="#0" class="info" data-bs-toggle="modal" data-bs-target="#payments_method"></a>
+                            <label class="container_radio">Bank Transfer<a href="#0" class="info" data-bs-toggle="modal"
+                                    data-bs-target="#payments_method"></a>
                                 <input type="radio" name="payment">
                                 <span class="checkmark"></span>
                             </label>
@@ -186,7 +196,8 @@
                     </ul>
                     <div class="payment_info d-none d-sm-block">
                         <figure><img src="view/img/cards_all.svg" alt=""></figure>
-                        <p>Sensibus reformidans interpretaris sit ne, nec errem nostrum et, te nec meliore philosophia. At vix quidam periculis. Solet tritani ad pri, no iisque definitiones sea.</p>
+                        <p>Sensibus reformidans interpretaris sit ne, nec errem nostrum et, te nec meliore philosophia.
+                            At vix quidam periculis. Solet tritani ad pri, no iisque definitiones sea.</p>
                     </div>
 
                     <h6 class="pb-2">Shipping Method</h6>
@@ -194,13 +205,15 @@
 
                     <ul>
                         <li>
-                            <label class="container_radio">Standard shipping<a href="#0" class="info" data-bs-toggle="modal" data-bs-target="#payments_method"></a>
+                            <label class="container_radio">Standard shipping<a href="#0" class="info"
+                                    data-bs-toggle="modal" data-bs-target="#payments_method"></a>
                                 <input type="radio" name="shipping" checked>
                                 <span class="checkmark"></span>
                             </label>
                         </li>
                         <li>
-                            <label class="container_radio">Express shipping<a href="#0" class="info" data-bs-toggle="modal" data-bs-target="#payments_method"></a>
+                            <label class="container_radio">Express shipping<a href="#0" class="info"
+                                    data-bs-toggle="modal" data-bs-target="#payments_method"></a>
                                 <input type="radio" name="shipping">
                                 <span class="checkmark"></span>
                             </label>
@@ -233,7 +246,7 @@
                             </label>
                         </div>
 
-                        <a href="index.php?act=checkout.php" class="btn_1 full-width">Confirm and Pay</a>
+                        <a href="index.php?act=confirm.php" class="btn_1 full-width">Confirm and Pay</a>
                     </div>
                     <!-- /box_general -->
                 </div>

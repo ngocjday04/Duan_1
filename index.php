@@ -1,7 +1,11 @@
 <?php
 require "./model/connect.php";
+require "./model/taikhoan.php";
+require "./model/sanpham.php";
+require "./model/danhmuc.php";
 require "view/home/header.php";
 include "global.php";
+$listdm = loadall_categories();
 if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
     $act = $_GET['act'];
     switch ($act) {
@@ -16,6 +20,12 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
             break;
         case 'checkout':
             include "view/giohang/checkout.php";
+            break;
+        case 'confirm':
+            include "view/xacnhan/confirm.php";
+            break;
+        case 'binhluan':
+            include "view/binhluan/binhluan.php";
             break;
         default:
             include "view/home/home.php";

@@ -11,7 +11,7 @@
     <div class="menu">
         <ul>
             <li><a href="index.php?act=adddm">Quản Lý Danh Mục</a></li>
-            <li><a href="index.php?act=addsp">Quản Lý Sản Phẩm</a></li>
+            <li><a href="index.php?act=createsp">Quản Lý Sản Phẩm</a></li>
             <li><a href="index.php?act=dstk">Quản Lý Tài Khoản</a></li>
             <li><a href="index.php?act=dsbl">Quản Lý Bình Luận</a></li>
             <li><a href="index.php?act=thongke">Thống Kê và Biểu Đồ</a></li>
