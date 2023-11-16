@@ -20,12 +20,17 @@ function loadall_product_top10()
 
 function loadall_product_home()
 {
-    $sql = "SELECT * FROM product Where 1  ORDER BY product_id DESC LIMIT 0, 8";
+    $sql = "SELECT * FROM product Where 1  ORDER BY product_id DESC LIMIT 0, 11";
     $listproduct = pdo_query($sql);
     return $listproduct;
 }
-
-function loadall_product($kyw, $category_id = 0)
+function loadall_product_home_noibat()
+{
+    $sql = "SELECT * FROM product Where 1  ORDER BY product_id ASC LIMIT 0, 6";
+    $listproduct = pdo_query($sql);
+    return $listproduct;
+}
+function loadall_product($kyw = "", $category_id = 0)
 {
     $sql = "select * from product where 1";
     if ($kyw != "") {
@@ -66,7 +71,7 @@ function update_product($product_id, $product_name, $category_id, $price, $descr
     pdo_execute($sql);
 }
 
-function load_sanpham_cungloai($product_id, $category_id)
+function load_product_cungloai($product_id, $category_id)
 {
     $sql = "SELECT * FROM product WHERE category_id=" . $category_id . " AND product_id <> " . $product_id;
     $listproduct = pdo_query($sql);

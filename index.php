@@ -6,25 +6,34 @@ require "./model/danhmuc.php";
 include "global.php";
 $listdm = loadall_categories();
 $productnew = loadall_product_home();
+$product_old = loadall_product_home_noibat();
 require "view/home/header.php";
 if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
     $act = $_GET['act'];
     switch ($act) {
         case 'sanpham':
+            $listdm = loadall_categories();
+            $productnew = loadall_product_home();
+            if (isset($_POST['kyw']) && ($_POST['kyw'] != "")) {
+                $kyw = $_POST['kyw'];
+            } else {
+                $kyw = "";
+            }
             if (isset($_GET['idct_dm']) && ($_GET['idct_dm'] > 0)) {
                 $iddm = $_GET['idct_dm'];
+                $listdm = loadall_product($iddm, 0);
             } else {
                 $iddm = 0;
             }
             $category_name = load_category_name($iddm);
-            $listproduct = loadall_product("", $iddm);
+            $listproduct = loadall_product($kyw = "", $iddm);
             include "view/sanpham/sanpham.php";
             break;
         case 'chitietsp':
             if (isset($_GET['idsp']) && ($_GET['idsp'] > 0)) {
                 $oneproduct = loadone_product($_GET['idsp']);
                 extract($oneproduct);
-                $same_product = load_sanpham_cungloai($product_id, $category_id);
+                $same_product = load_product_cungloai($product_id, $category_id);
                 include "view/sanpham/chitietsp.php";
             } else {
                 include "view/home/home.php";

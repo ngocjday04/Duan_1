@@ -252,14 +252,14 @@
 
     <div class="container margin_60_35">
         <div class="main_title">
-            <h2>Related</h2>
+            <h2><strong> SẢN PHẨM CÙNG LOẠI</strong></h2>
             <span>Products</span>
-            <p>Cum doctus civibus efficiantur in imperdiet deterruisset.</p>
+            <p>Hãy sống đúng cá tính mặc theo phong cách mà bạn muốn </p>
         </div>
 
         <div class="owl-carousel owl-theme products_carousel">
-            <?php foreach ($same_product as $key => $value) : ?>
-            <? extract($value); ?>
+            <?php foreach ($same_product as $product) : ?>
+            <? extract($product); ?>
             <div class="item">
                 <div class="grid_item">
                     <span class="ribbon new">New</span>
