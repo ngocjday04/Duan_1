@@ -39,14 +39,15 @@ if (is_file($image_path)) {
             </div>
 
             <div class="row mb">
-                <select name="danhmuctest" id="" class="">
+                <select name="category_id" id="" class="">
                     <?php
-                    foreach ($categories as $category) {
-                        extract($category);
-                        if ($category_id == $category_id) {
-                            echo '<option value="' . $category_id . '" selected>' . $category_name . '</option>';
+                    foreach ($danhmuc as $category) {
+                        $id_cate = $category['category_id'];
+                        $name_cate = $category['category_name'];
+                        if ($id_cate == $category_id) {
+                            echo '<option value="' . $id_cate . '" selected>' . $name_cate . '</option>';
                         } else {
-                            echo '<option value="' . $category_id . '">' . $category_name . '</option>';
+                            echo '<option value="' . $id_cate . '">' . $name_cate . '</option>';
                         }
                     }
                     ?>

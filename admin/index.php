@@ -100,6 +100,7 @@ if (isset($_GET['act'])) {
 
         case "updatesp":
             if (isset($_POST['capnhat']) && ($_POST['capnhat'])) {
+                $category_id = $_POST['category_id'];
                 $product_id = $_POST['product_id'];
                 $product_name = $_POST['product_name'];
                 $price = $_POST['price'];
@@ -107,11 +108,13 @@ if (isset($_GET['act'])) {
                 $file = $_FILES['image'];
                 $image = $file["name"];
                 move_uploaded_file($file['tmp_name'], "../upload/" . $image);
-                update_product($product_id, $product_name, $price, $image, $description);
+                update_product($product_id, $product_name, $category_id, $price, $description, $image);
             }
             $danhmuc = loadall_categories();
             $product = loadall_product("", 0);
+            include "../admin/sanpham/list.php";
             break;
+
             // tài khoản
 
         case 'dstk':

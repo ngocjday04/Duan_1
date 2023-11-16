@@ -3,14 +3,32 @@ require "./model/connect.php";
 require "./model/taikhoan.php";
 require "./model/sanpham.php";
 require "./model/danhmuc.php";
-require "view/home/header.php";
 include "global.php";
 $listdm = loadall_categories();
+$productnew = loadall_product_home();
+require "view/home/header.php";
 if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
     $act = $_GET['act'];
     switch ($act) {
+        case 'sanpham':
+            if (isset($_GET['idct_dm']) && ($_GET['idct_dm'] > 0)) {
+                $iddm = $_GET['idct_dm'];
+            } else {
+                $iddm = 0;
+            }
+            $category_name = load_category_name($iddm);
+            $listproduct = loadall_product("", $iddm);
+            include "view/sanpham/sanpham.php";
+            break;
         case 'chitietsp':
-            include "view/sanpham/chitietsp.php";
+            if (isset($_GET['idsp']) && ($_GET['idsp'] > 0)) {
+                $oneproduct = loadone_product($_GET['idsp']);
+                extract($oneproduct);
+                $same_product = load_sanpham_cungloai($product_id, $category_id);
+                include "view/sanpham/chitietsp.php";
+            } else {
+                include "view/home/home.php";
+            }
             break;
         case 'account':
             include "view/account/account.php";

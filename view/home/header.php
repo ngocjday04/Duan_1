@@ -59,7 +59,8 @@
                             <!-- Mobile menu button -->
                             <div class="main-menu">
                                 <div id="header_menu">
-                                    <a href="index.html"><img src="view/img/logo_black.svg" alt="" width="100" height="35"></a>
+                                    <a href="index.html"><img src="view/img/logo_black.svg" alt="" width="100"
+                                            height="35"></a>
                                     <a href="#" class="open_close" id="close_in"><i class="ti-close"></i></a>
                                 </div>
                                 <ul>
@@ -126,7 +127,9 @@
                                                 <div class="col-lg-3 d-xl-block d-lg-block d-md-none d-sm-none d-none">
                                                     <div class="banner_menu">
                                                         <a href="#0">
-                                                            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="img/banner_menu.jpg" width="400" height="550" alt="" class="img-fluid lazy">
+                                                            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                                                                data-src="img/banner_menu.jpg" width="400" height="550"
+                                                                alt="" class="img-fluid lazy">
                                                         </a>
                                                     </div>
                                                 </div>
@@ -189,67 +192,17 @@
                                         </span>
                                         <div id="menu">
                                             <ul>
-                                                <li><span><a href="#0">Collections</a></span>
-                                                    <ul>
-                                                        <li><a href="listing-grid-1-full.html">Trending</a></li>
-                                                        <li><a href="listing-grid-2-full.html">Life style</a></li>
-                                                        <li><a href="listing-grid-3.html">Running</a></li>
-                                                        <li><a href="listing-grid-4-sidebar-left.html">Training</a></li>
-                                                        <li><a href="listing-grid-5-sidebar-right.html">View all
-                                                                Collections</a></li>
-                                                    </ul>
+                                                <?php foreach ($listdm as $key => $dm) : ?>
+                                                <?php extract($dm);
+                                                    $category_dt = "index.php?act=sanpham&idct_dm" . $category_id;
+                                                    ?>
+                                                <li><span><a href="<?= $category_dt ?>"><?= $category_name ?></a></span>
+
                                                 </li>
-                                                <li><span><a href="#">Men</a></span>
-                                                    <ul>
-                                                        <li><a href="listing-grid-6-sidebar-left.html">Offers</a></li>
-                                                        <li><a href="listing-grid-7-sidebar-right.html">Shoes</a></li>
-                                                        <li><a href="listing-row-1-sidebar-left.html">Clothing</a></li>
-                                                        <li><a href="listing-row-3-sidebar-left.html">Accessories</a>
-                                                        </li>
-                                                        <li><a href="listing-row-4-sidebar-extended.html">Equipment</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li><span><a href="#">Women</a></span>
-                                                    <ul>
-                                                        <li><a href="listing-grid-1-full.html">Best Sellers</a></li>
-                                                        <li><a href="listing-grid-2-full.html">Clothing</a></li>
-                                                        <li><a href="listing-grid-3.html">Accessories</a></li>
-                                                        <li><a href="listing-grid-4-sidebar-left.html">Shoes</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><span><a href="#">Boys</a></span>
-                                                    <ul>
-                                                        <li><a href="listing-grid-6-sidebar-left.html">Easy On Shoes</a>
-                                                        </li>
-                                                        <li><a href="listing-grid-7-sidebar-right.html">Clothing</a>
-                                                        </li>
-                                                        <li><a href="listing-row-3-sidebar-left.html">Must Have</a></li>
-                                                        <li><a href="listing-row-4-sidebar-extended.html">All Boys</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li><span><a href="#">Girls</a></span>
-                                                    <ul>
-                                                        <li><a href="listing-grid-1-full.html">New Releases</a></li>
-                                                        <li><a href="listing-grid-2-full.html">Clothing</a></li>
-                                                        <li><a href="listing-grid-3.html">Sale</a></li>
-                                                        <li><a href="listing-grid-4-sidebar-left.html">Best Sellers</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li><span><a href="#">Customize</a></span>
-                                                    <ul>
-                                                        <li><a href="listing-row-1-sidebar-left.html">For Men</a></li>
-                                                        <li><a href="listing-row-2-sidebar-right.html">For Women</a>
-                                                        </li>
-                                                        <li><a href="listing-row-4-sidebar-extended.html">For Boys</a>
-                                                        </li>
-                                                        <li><a href="listing-grid-1-full.html">For Girls</a></li>
-                                                    </ul>
-                                                </li>
+                                                <?php endforeach; ?>
                                             </ul>
                                         </div>
+
                                     </li>
                                 </ul>
                             </nav>
@@ -269,14 +222,20 @@
                                             <ul>
                                                 <li>
                                                     <a href="product-detail-1.html">
-                                                        <figure><img src="view/img/products/product_placeholder_square_small.jpg" data-src="view/img/products/shoes/thumb/1.jpg" alt="" width="50" height="50" class="lazy"></figure>
+                                                        <figure><img
+                                                                src="view/img/products/product_placeholder_square_small.jpg"
+                                                                data-src="view/img/products/shoes/thumb/1.jpg" alt=""
+                                                                width="50" height="50" class="lazy"></figure>
                                                         <strong><span>1x Armor Air x Fear</span>$90.00</strong>
                                                     </a>
                                                     <a href="#0" class="action"><i class="ti-trash"></i></a>
                                                 </li>
                                                 <li>
                                                     <a href="product-detail-1.html">
-                                                        <figure><img src="view/img/products/product_placeholder_square_small.jpg" data-src="view/img/products/shoes/thumb/2.jpg" alt="" width="50" height="50" class="lazy"></figure>
+                                                        <figure><img
+                                                                src="view/img/products/product_placeholder_square_small.jpg"
+                                                                data-src="view/img/products/shoes/thumb/2.jpg" alt=""
+                                                                width="50" height="50" class="lazy"></figure>
                                                         <strong><span>1x Armor Okwahn II</span>$110.00</strong>
                                                     </a>
                                                     <a href="0" class="action"><i class="ti-trash"></i></a>
@@ -284,7 +243,8 @@
                                             </ul>
                                             <div class="total_drop">
                                                 <div class="clearfix"><strong>Total</strong><span>$200.00</span></div>
-                                                <a href="index.php?act=giohang" class="btn_1 outline">View Cart</a><a href="index.php?act=checkout" class="btn_1">Checkout</a>
+                                                <a href="index.php?act=giohang" class="btn_1 outline">View Cart</a><a
+                                                    href="index.php?act=checkout" class="btn_1">Checkout</a>
                                             </div>
                                         </div>
                                     </div>
@@ -339,8 +299,10 @@
                     <!-- /row -->
                 </div>
                 <div class="search_mob_wp">
-                    <input type="text" class="form-control" placeholder="Search over 10.000 products">
-                    <input type="submit" class="btn_1 full-width" value="Search">
+                    <form action="ĩndex.php?act=sanpham" method="post">
+                        <input type="text" name="kyw" class="form-control" placeholder="Search here">
+                        <input type="submit" name="timkiem" class="btn_1 full-width" value="Search">
+                    </form>
                 </div>
                 <!-- /search_mobile -->
             </div>
