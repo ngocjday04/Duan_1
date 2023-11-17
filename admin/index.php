@@ -129,6 +129,23 @@ if (isset($_GET['act'])) {
             $listtaikhoan = loadall_taikhoan();
             include "../admin/taikhoan/list.php";
             break;
+            // Thuộc tính
+
+
+            break;
+
+        case 'thuoctinh':
+            $listproduct = loadall_product();
+            if (isset($_POST['variant_id']) && ($_POST['variant_id'])) {
+                $variant_id = $_POST['variant_id'];
+                $color = $_POST['color'];
+                $size = $_POST['size'];
+                $quantity = $_POST['quantity'];
+                $product_id = $_POST['product_id'];
+                insert_variants($variant_id, $product_id, $color, $size, $quantity);
+                $thongbao = "Thêm thành công";
+            }
+            include "../admin/thuoctinh/add.php";
     }
 } else {
     include "home.php";
