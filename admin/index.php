@@ -1,6 +1,7 @@
 <?php
 include "../model/connect.php";
 include "../model/danhmuc.php";
+include "../model/binhluan.php";
 include "../model/thuoctinh.php";
 include "../model/sanpham.php";
 include "../model/taikhoan.php";
@@ -145,7 +146,17 @@ if (isset($_GET['act'])) {
             }
 
             break;
-
+        case 'dsbl':
+            $listcmt = loadall_comment(0);
+            include "../admin/binhluan/list.php";
+            break;
+        case 'xoabl':
+            if (isset($_GET['comment_id'])) {
+                delete_comment($_GET['comment_id']);
+            }
+            $listcmt = comment_selectall();
+            include "../admin/binhluan/list.php";
+            break;
 
         case 'add-thuoctinh':
             $listproduct = loadall_product();

@@ -35,7 +35,8 @@
                 <tr>
                     <td>
                         <div class="thumb_cart">
-                            <img src="view/img/products/product_placeholder_square_small.jpg" data-src="view/img/products/shoes/1.jpg" class="lazy" alt="Image">
+                            <img src="view/img/products/product_placeholder_square_small.jpg"
+                                data-src="view/img/products/shoes/1.jpg" class="lazy" alt="Image">
                         </div>
                         <span class="item_cart">Armor Air x Fear</span>
                     </td>
@@ -59,7 +60,8 @@
                 <tr>
                     <td>
                         <div class="thumb_cart">
-                            <img src="view/img/products/product_placeholder_square_small.jpg" data-src="view/img/products/shoes/2.jpg" class="lazy" alt="Image">
+                            <img src="view/img/products/product_placeholder_square_small.jpg"
+                                data-src="view/img/products/shoes/2.jpg" class="lazy" alt="Image">
                         </div>
                         <span class="item_cart">Armor Okwahn II</span>
                     </td>
@@ -83,7 +85,8 @@
                 <tr>
                     <td>
                         <div class="thumb_cart">
-                            <img src="view/img/products/product_placeholder_square_small.jpg" data-src="view/img/products/shoes/3.jpg" class="lazy" alt="Image">
+                            <img src="view/img/products/product_placeholder_square_small.jpg"
+                                data-src="view/img/products/shoes/3.jpg" class="lazy" alt="Image">
                         </div>
                         <span class="item_cart">Armor Air Wildwood ACG</span>
                     </td>
@@ -108,12 +111,7 @@
             </tbody>
         </table>
 
-        <div class="row add_top_30 flex-sm-row-reverse cart_actions">
-            <div class="col-sm-4 text-end">
-                <button type="button" class="btn_1 gray">Update Cart</button>
-            </div>
-        </div>
-        <!-- /cart_actions -->
+
 
     </div>
     <!-- /container -->
