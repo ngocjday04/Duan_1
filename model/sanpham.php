@@ -17,7 +17,12 @@ function loadall_product_top10()
     $listproduct = pdo_query($sql);
     return $listproduct;
 }
-
+function loadall_sanpham_admin()
+{
+    $sql = "SELECT*FROM product ORDER BY product_id DESC";
+    $listproduct = pdo_query($sql);
+    return $listproduct;
+}
 function loadall_product_home()
 {
     $sql = "SELECT * FROM product Where 1  ORDER BY product_id DESC LIMIT 0, 11";

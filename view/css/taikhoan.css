@@ -1,25 +1,23 @@
 body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 .container {
   margin-top: 50px;
 }
 
-.mb {
-  margin-bottom: 1rem;
+.header-2 {
+  margin-bottom: 20px;
 }
 
-.row {
-  margin-bottom: 1rem;
-}
-
-.row img {
-  margin-top: 10px;
+.formcontent {
+  padding: 20px;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
 }
 
 .custom-margin {
-  margin-right: 10px;
+  margin-top: 10px;
 }

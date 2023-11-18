@@ -42,6 +42,31 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
         case 'account':
             include "view/account/account.php";
             break;
+        case 'dangky':
+            if (isset($_POST['dangky']) && ($_POST['dangky'])) {
+                $email = $_POST['email'];
+                $user_name = $_POST['user_name'];
+                $pass = $_POST['password'];
+                insert_taikhoan($email, $user_name, $pass);
+                $thongbao = "Đăng ký thành công. <br> Vui lòng đăng nhập để thực hiện thêm chức năng !";
+            }
+            include "view/account/creat_account.php";
+            break;
+        case 'log-in':
+            if (isset($_POST['dangnhap']) && ($_POST['dangnhap'])) {
+                $user_name = $_POST['user_name'];
+                $pass = $_POST['password'];
+                $checkuser = checkuser($user_name, $pass);
+                if (is_array($checkuser)) {
+                    $_SESSION['user_name'] = $checkuser;
+                    $thongbao = "Bạn đã đăng nhập thành công!";
+                    header('location: index.php');
+                } else {
+                    $thongbao = "Tài khoản không tồn tại. Vui lòng kiểm tra hoặc tiến hành đăng ký! ";
+                }
+            }
+            include "view/account/creat_account.php";
+            break;
         case 'giohang':
             include "view/giohang/cart.php";
             break;

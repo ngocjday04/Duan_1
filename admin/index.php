@@ -1,6 +1,7 @@
 <?php
 include "../model/connect.php";
 include "../model/danhmuc.php";
+include "../model/thuoctinh.php";
 include "../model/sanpham.php";
 include "../model/taikhoan.php";
 include "header.php";
@@ -77,7 +78,7 @@ if (isset($_GET['act'])) {
                 $kyw = "";
                 $category_id = 0;
             }
-            $product = loadall_product($kyw, $category_id = 0);
+            $product = loadall_product($kyw = "", $category_id = 0);
             $danhmuc = loadall_categories();
             include "../admin/sanpham/list.php";
             break;
@@ -131,21 +132,33 @@ if (isset($_GET['act'])) {
             break;
             // Thuộc tính
 
+        case 'listthuoctinh':
+            $listproduct = loadall_sanpham_admin();
+            if (isset($_POST['kyw']) && ($_POST['idvr'] > 0)) {
+                $idvr = $_POST['variant_id'];
+                $listvariant = loadall_thuoctinh_admin($variant_id);
+                include "../admin/thuoctinh/list.php";
+            } else {
+                $idvr = 0;
+                $listvariant = loadall_thuoctinh_admin($idvr);
+                include "../admin/thuoctinh/list.php";
+            }
 
             break;
 
-        case 'thuoctinh':
+
+        case 'add-thuoctinh':
             $listproduct = loadall_product();
-            if (isset($_POST['variant_id']) && ($_POST['variant_id'])) {
-                $variant_id = $_POST['variant_id'];
+            if (isset($_POST['themmoitt']) && ($_POST['themmoitt'])) {
+                $product_id = $_POST['product_id'];
                 $color = $_POST['color'];
                 $size = $_POST['size'];
                 $quantity = $_POST['quantity'];
-                $product_id = $_POST['product_id'];
-                insert_variants($variant_id, $product_id, $color, $size, $quantity);
+                insert_thuoctinh($product_id, $color, $size, $quantity);
                 $thongbao = "Thêm thành công";
             }
             include "../admin/thuoctinh/add.php";
+            break;
     }
 } else {
     include "home.php";
