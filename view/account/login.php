@@ -7,7 +7,7 @@
                 <li>Page active</li>
             </ul>
         </div>
-        <h1>Sign In or Create an Account</h1>
+        <h1>Đăng Nhập</h1>
     </div>
     <!-- /page_header -->
     <div class="row justify-content-center">
@@ -16,7 +16,7 @@
                 <h3 class="client">Already Client</h3>
                 <form action="index.php?act=login" method="post">
                     <div class="form_container">
-                        <div class="divider"><span>Or</span></div>
+                        <div class="divider"><span>Hoặc</span></div>
                         <div class="form-group">
                             <input type="email" class="form-control" name="email" placeholder="Email*">
                         </div>
@@ -25,24 +25,18 @@
                         </div>
                         <div class="clearfix add_bottom_15">
                             <div class="checkboxes float-start">
-                                <label class="container_check">Remember me
+                                <label class="container_check">Ghi nhớ đăng nhập
                                     <input type="checkbox">
                                     <span class="checkmark"></span>
                                 </label>
                             </div>
-                            <div class="float-end"><a id="forgot" href="index.php">Create Account</a></div>
+                            <div class="float-end"><a id="forgot" href="index.php?act=creat_account">Create Account</a>
+                            </div>
                             <br>
-                            <div class="float-end"><a id="forgot" href="javascript:void(0);">Lost Password?</a></div>
+                            <div class="float-end"><a id="forgot" href="index.php?act=lotspass">Lost Password?</a></div>
                         </div>
                         <div class="text-center">
-                            <input type="submit" name="dangky" value="Log In" class="btn_1 full-width">
-                        </div>
-                        <div id="forgot_pw">
-                            <div class="form-group">
-                                <input type="email" class="form-control" name="email_forgot" id="email_forgot" placeholder="Type your email">
-                            </div>
-                            <p>A new password will be sent shortly.</p>
-                            <div class="text-center"><input type="submit" value="Reset Password" class="btn_1"></div>
+                            <input type="submit" name="dangnhap" value="Log In" class="btn_1 full-width">
                         </div>
                     </div>
 

@@ -65,6 +65,7 @@
                                         class="form-control"></textarea>
                                 </div>
                             </div>
+
                             <div class="form-group row mb">
                                 <div class="col-md-12">
                                     <input type="submit" name="submitsp" value="Thêm mới" class="btn btn-primary">

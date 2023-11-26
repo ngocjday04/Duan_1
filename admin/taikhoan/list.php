@@ -56,10 +56,7 @@
                     </table>
                 </div>
                 <div class="row mb custom-margin">
-                    <input type="button" class="btn btn-secondary" value="Chọn tất cả">
-                    <input type="button" class="btn btn-secondary" value="Bỏ chọn tất cả">
-                    <input type="button" class="btn btn-danger" value="Xóa các mục đã chọn">
-                    <a href="index.php?act=adddm"><input type="button" class="btn btn-primary" value="Nhập thêm"></a>
+                    <a href="index.php?act=addtk"><input type="button" class="btn btn-primary" value="Nhập thêm"></a>
                 </div>
             </div>
         </div>

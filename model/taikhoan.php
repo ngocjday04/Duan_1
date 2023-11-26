@@ -1,9 +1,9 @@
 <?php
-function insert_taikhoan($email, $user_name, $password)
+function insert_taikhoan($user_name, $email, $password)
 {
-    $sql = "INSERT INTO users(email,user_name,pass) VALUES('$email','$user_name','$password')";
-    pdo_execute($sql);
-};
+    $sql = "INSERT INTO users(user_name,email,password) VALUES(?,?,?)";
+    pdo_execute($sql, $user_name, $email, $password);
+}
 function checkuser($user_name, $password)
 {
     $sql = "SELECT * FROM users WHERE user_name='" . $user_name . "'AND password='" . $password . "'";

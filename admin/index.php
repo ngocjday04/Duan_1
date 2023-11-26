@@ -79,7 +79,7 @@ if (isset($_GET['act'])) {
                 $kyw = "";
                 $category_id = 0;
             }
-            $product = loadall_product($kyw = "", $category_id = 0);
+            $product = loadall_product($kyw = "", $category_id = 0, 0, 0);
             $danhmuc = loadall_categories();
             include "../admin/sanpham/list.php";
             break;
@@ -88,7 +88,7 @@ if (isset($_GET['act'])) {
             if (isset($_GET['idsp']) && ($_GET['idsp'] > 0)) {
                 delete_product($_GET['idsp']);
             }
-            $product = loadall_product("", 0);
+            $product = loadall_product("", 0, 0, 0);
             include "../admin/sanpham/list.php";
             break;
 
@@ -113,12 +113,26 @@ if (isset($_GET['act'])) {
                 update_product($product_id, $product_name, $category_id, $price, $description, $image);
             }
             $danhmuc = loadall_categories();
-            $product = loadall_product("", 0);
+            $product = loadall_product("", 0, 0, 0);
             include "../admin/sanpham/list.php";
             break;
 
             // tài khoản
+        case 'addtk':
+            $listtaikhoan = loadall_taikhoan();
+            if (isset($_POST['themmoi']) && ($_POST['themmoi'])) {
+                $user_name = $_POST['user_name'];
+                $email = $_POST['email'];
+                $password = $_POST['password'];
+                $tel = $_POST['tel'];
+                $address = $_POST['address'];
 
+                // insert_users($user_name, $email, $password, $tel, $address);
+                insert_taikhoan($user_name, $email, $password);
+                $thongbao = "Thêm thành công";
+            }
+            include "../admin/taikhoan/addtk.php";
+            break;
         case 'dstk':
             $listtaikhoan = loadall_taikhoan();
             include "../admin/taikhoan/list.php";
@@ -159,7 +173,7 @@ if (isset($_GET['act'])) {
             break;
 
         case 'add-thuoctinh':
-            $listproduct = loadall_product();
+            $listproduct = loadall_product(0, 0, 0, 0);
             if (isset($_POST['themmoitt']) && ($_POST['themmoitt'])) {
                 $product_id = $_POST['product_id'];
                 $color = $_POST['color'];
@@ -170,6 +184,20 @@ if (isset($_GET['act'])) {
             }
             include "../admin/thuoctinh/add.php";
             break;
+
+        case 'update-thuoctinh':
+            $variant_id = $_GET['variant_id'];
+            $variants = loadone_variant($variant_id);
+            $listsanpham = loadall_sanpham_admin();
+            if (isset($_POST['capnhattt']) && ($_POST['capnhattt'])) {
+                $product_id = $_POST['product_id'];
+                $size = $_POST['size'];
+                $color = $_POST['color'];
+                $quantity = $_POST['quantity'];
+                update_thuotinh($variant_id, $product_id, $color, $size, $quantity);
+                include "../admin/thuoctinh/update.php";
+                break;
+            }
     }
 } else {
     include "home.php";

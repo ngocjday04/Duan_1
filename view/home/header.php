@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="Ansonika">
+    <script src="view/thuvien.js"> </script>
+    <script src="./view/giohang/jquery.min.js"> </script>
     <title>Dự Án 1 _ Nhóm 12</title>
 
     <!-- GOOGLE WEB FONT -->
@@ -76,83 +78,14 @@
                                     <li class="megamenu submenu">
                                         <a href="javascript:void(0);" class="show-submenu-mega">Pages</a>
                                         <div class="menu-wrapper">
-                                            <div class="row small-gutters">
-                                                <div class="col-lg-3">
-                                                    <h3>Listing grid</h3>
-                                                    <ul>
-                                                        <li><a href="listing-grid-1-full.html">Grid Full Width</a></li>
-                                                        <li><a href="listing-grid-2-full.html">Grid Full Width 2</a>
-                                                        </li>
-                                                        <li><a href="listing-grid-3.html">Grid Boxed</a></li>
-                                                        <li><a href="listing-grid-4-sidebar-left.html">Grid Sidebar
-                                                                Left</a></li>
-                                                        <li><a href="listing-grid-5-sidebar-right.html">Grid Sidebar
-                                                                Right</a></li>
-                                                        <li><a href="listing-grid-6-sidebar-left.html">Grid Sidebar Left
-                                                                2</a></li>
-                                                        <li><a href="listing-grid-7-sidebar-right.html">Grid Sidebar
-                                                                Right 2</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-lg-3">
-                                                    <h3>Listing row &amp; Product</h3>
-                                                    <ul>
-                                                        <li><a href="listing-row-1-sidebar-left.html">Row Sidebar
-                                                                Left</a></li>
-                                                        <li><a href="listing-row-2-sidebar-right.html">Row Sidebar
-                                                                Right</a></li>
-                                                        <li><a href="listing-row-3-sidebar-left.html">Row Sidebar Left
-                                                                2</a></li>
-                                                        <li><a href="listing-row-4-sidebar-extended.html">Row Sidebar
-                                                                Extended</a></li>
-                                                        <li><a href="product-detail-1.html">Product Large Image</a></li>
-                                                        <li><a href="product-detail-2.html">Product Carousel</a></li>
-                                                        <li><a href="product-detail-3.html">Product Sticky Info</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-lg-3">
-                                                    <h3>Other pages</h3>
-                                                    <ul>
-                                                        <li><a href="index.php?act=giohang">Cart Page</a></li>
-                                                        <li><a href="index.php?act=checkout">Check Out Page</a></li>
-                                                        <li><a href="index.php?act=confirm">Confirm Purchase
-                                                                Page</a></li>
-                                                        <li><a href="index.php?act=account.php">Create Account Page</a>
-                                                        </li>
-                                                        <li><a href="index.php?act=trackorder">Track Order</a></li>
-                                                        <li><a href="index.php?act=help">Help Page</a></li>
-                                                        <li><a href="index.php?act=binhluan">Leave a Review</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-lg-3 d-xl-block d-lg-block d-md-none d-sm-none d-none">
-                                                    <div class="banner_menu">
-                                                        <a href="#0">
-                                                            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                                                                data-src="img/banner_menu.jpg" width="400" height="550"
-                                                                alt="" class="img-fluid lazy">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
+
                                             <!-- /row -->
                                         </div>
                                         <!-- /menu-wrapper -->
                                     </li>
                                     <li class="submenu">
                                         <a href="javascript:void(0);" class="show-submenu">Extra Pages</a>
-                                        <ul>
-                                            <li><a href="header-2.html">Header Style 2</a></li>
-                                            <li><a href="header-3.html">Header Style 3</a></li>
-                                            <li><a href="header-4.html">Header Style 4</a></li>
-                                            <li><a href="header-5.html">Header Style 5</a></li>
-                                            <li><a href="404.html">404 Page</a></li>
-                                            <li><a href="sign-in-modal.html">Sign In Modal</a></li>
-                                            <li><a href="contacts.html">Contact Us</a></li>
-                                            <li><a href="about.html">About 1</a></li>
-                                            <li><a href="about-2.html">About 2</a></li>
-                                            <li><a href="modal-advertise.html">Modal Advertise</a></li>
-                                            <li><a href="modal-newsletter.html">Modal Newsletter</a></li>
-                                        </ul>
+
                                     </li>
                                     <li>
                                         <a href="blog.html">Blog</a>
@@ -165,8 +98,8 @@
                             <!--/main-menu -->
                         </nav>
                         <div class="col-xl-3 col-lg-2 d-lg-flex align-items-center justify-content-end text-end">
-                            <a class="phone_top" href="tel://9438843343"><strong><span>Need Help?</span>+94
-                                    423-23-221</strong></a>
+                            <a class="phone_top" href="tel://9438843343"><strong><span>Trợ giúp?</span>1900
+                                    9009</strong></a>
                         </div>
                     </div>
                     <!-- /row -->
@@ -187,7 +120,7 @@
                                                         <span class="hamburger-inner"></span>
                                                     </span>
                                                 </span>
-                                                Categories
+                                                Danh mục
                                             </a>
                                         </span>
                                         <div id="menu">
@@ -209,15 +142,20 @@
                         </div>
                         <div class="col-xl-6 col-lg-7 col-md-6 d-none d-md-block">
                             <div class="custom-search-input">
-                                <input type="text" placeholder="Search over 10.000 products">
-                                <button type="submit"><i class="header-icon_search_custom"></i></button>
+                                <form action="index.php?act=sanpham" method="post">
+                                    <input type="text" class="form-control" name="kyw"
+                                        placeholder="Tìm kiếm tại đây ..." />
+                                    <button type="submit" name="timkiem"><i
+                                            class="header-icon_search_custom"></i></button>
+                                </form>
                             </div>
                         </div>
                         <div class="col-xl-3 col-lg-2 col-md-3">
                             <ul class="top_tools">
                                 <li>
                                     <div class="dropdown dropdown-cart">
-                                        <a href="index.php?act=giohang" class="cart_bt"><strong>2</strong></a>
+                                        <a href="index.php?act=addtocart" class="cart_bt"
+                                            id="cart_bt"><strong></strong></a>
                                         <div class="dropdown-menu">
                                             <ul>
                                                 <li>
@@ -243,7 +181,7 @@
                                             </ul>
                                             <div class="total_drop">
                                                 <div class="clearfix"><strong>Total</strong><span>$200.00</span></div>
-                                                <a href="index.php?act=giohang" class="btn_1 outline">View Cart</a><a
+                                                <a href="index.php?act=addtocart" class="btn_1 outline">View Cart</a><a
                                                     href="index.php?act=checkout" class="btn_1">Checkout</a>
                                             </div>
                                         </div>
@@ -254,31 +192,38 @@
                                     <a href="#0" class="wishlist"><span>Wishlist</span></a>
                                 </li>
                                 <li>
+                                    <?php
+                                    if (isset($_SESSION['user_name']) && ($_SESSION['user_name'] != "")) {
+                                        echo '<a href="index.php?act=account"> ' . $_SESSION['user_name']['user_name'] . '</a>';
+                                        echo '<a href="index.php?act=thoat"> Thoát</a>';
+                                    } else {
+                                        echo '
+                                    <a href="index.php?act=account"> ĐĂNG NHẬP </a>';
+                                    }
+                                    ?>
                                     <div class="dropdown dropdown-access">
-                                        <a href="index.php?act=account" class="access_link"><span>Account</span></a>
+                                        <?php
+                                        // if (isset($_SESSION['user_name'])&&($_SESSION['user_name'])){}
+                                        ?>
+                                        <a href="index.php?act=account" class="access_link"><span>Tài khoản</span></a>
                                         <div class="dropdown-menu">
-                                            <a href="index.php?act=account" class="btn_1">Sign In or Sign Up</a>
+                                            <a href="index.php?act=account" class="btn_1">Đăng nhập or Đăng Ký</a>
                                             <ul>
                                                 <li>
-                                                    <a href="index.php?act=trackorder"><i class="ti-truck"></i>Track
-                                                        your
-                                                        Order</a>
+                                                    <a href="index.php?act=trackorder"><i class="ti-truck"></i>Theo dỗi
+                                                        đơn hàng</a>
                                                 </li>
                                                 <li>
-                                                    <a href="index.php?act=account"><i class="ti-package"></i>My
-                                                        Orders</a>
+                                                    <a href="index.php?act=account"><i class="ti-package"></i>Đơn hàng
+                                                        của tôi</a>
                                                 </li>
                                                 <li>
-                                                    <a href="index.php?act=account"><i class="ti-user"></i>My
-                                                        Profile</a>
-                                                </li>
-                                                <li>
-                                                    <a href="help.html"><i class="ti-help-alt"></i>Help and Faq</a>
+                                                    <a href="index.php?act=account"><i class="ti-user"></i>Thông tin</a>
                                                 </li>
                                             </ul>
                                         </div>
                                     </div>
-                                    <!-- /dropdown-access-->
+                                    <!-- /dropdown-access
                                 </li>
                                 <li>
                                     <a href="javascript:void(0);" class="btn_search_mob"><span>Search</span></a>
@@ -297,15 +242,12 @@
                         </div>
                     </div>
                     <!-- /row -->
-                </div>
-                <div class="search_mob_wp">
-                    <form action="index.php?act=sanpham" method="post">
-                        <input type="text" name="kyw" class="form-control" placeholder="Search here">
-                        <input type="submit" name="timkiem" class="btn_1 full-width" value="Search">
-                    </form>
-                </div>
-                <!-- /search_mobile -->
-            </div>
-            <!-- /main_nav -->
+                        </div>
+
+
+
+                        <!-- /search_mobile -->
+                    </div>
+                    <!-- /main_nav -->
         </header>
         <!-- /header -->

@@ -35,19 +35,25 @@ function loadall_product_home_noibat()
     $listproduct = pdo_query($sql);
     return $listproduct;
 }
-function loadall_product($kyw = "", $category_id = 0)
+function loadall_product($kyw = "", $category_id = 0, $start, $limit = 2)
 {
-    $sql = "select * from product where 1";
+    $sql = "SELECT * FROM product WHERE 1";
+
     if ($kyw != "") {
-        $sql .= " and product_name like '%" . $kyw . "%'";
+        $sql .= " AND product_name LIKE '%" . $kyw . "%'";
     }
+
     if ($category_id > 0) {
-        $sql .= " and category_id= '" . $category_id . "'";
+        $sql .= " AND category_id = '" . $category_id . "'";
     }
-    $sql .= " order by product_id desc";
+
+    $sql .= " ORDER BY product_id DESC";
+    $sql .= " LIMIT $start, $limit";
+
     $listproduct = pdo_query($sql);
     return $listproduct;
 }
+
 function load_category_name($iddm)
 {
     if ($iddm > 0) {

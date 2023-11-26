@@ -14,8 +14,7 @@
                                         Limited items available at this price
                                     </p>
                                     <div class="owl-slide-animated owl-slide-cta">
-                                        <a class="btn_1" href="index.php?act=chitietsp&idsp=<?= $product_id ?>"
-                                            role="button">Shop Now</a>
+                                        <a class="btn_1" href="index.php?act=chitietsp&idsp=<?= $product_id ?>" role="button">Shop Now</a>
                                     </div>
                                 </div>
                             </div>
@@ -114,44 +113,39 @@
         <div class="row small-gutters">
             <?php
             foreach ($productnew as $key => $value) : ?>
-            <?php extract($value); ?>
-            <div class="col-6 col-md-4 col-xl-3">
+                <?php extract($value); ?>
+                <div class="col-6 col-md-4 col-xl-3">
 
 
-                <div class="grid_item">
-                    <span class="ribbon new">Hot</span>
-                    <figure>
+                    <div class="grid_item">
+                        <span class="ribbon new">Hot</span>
+                        <figure>
+                            <a href="index.php?act=chitietsp&idsp=<?= $product_id ?>">
+                                <img class="img-fluid lazy" src="upload/<?= $image ?>" data-src="upload/<?= $image ?>" alt="lỗi" />
+                                <img class="img-fluid lazy" src="upload/<?= $image ?>" data-src="upload/<?= $image ?>" alt="lỗi" />
+                            </a>
+                        </figure>
                         <a href="index.php?act=chitietsp&idsp=<?= $product_id ?>">
-                            <img class="img-fluid lazy" src="upload/<?= $image ?>" data-src="upload/<?= $image ?>"
-                                alt="lỗi" />
-                            <img class="img-fluid lazy" src="upload/<?= $image ?>" data-src="upload/<?= $image ?>"
-                                alt="lỗi" />
+                            <h3><?= $product_name ?></h3>
                         </a>
-                    </figure>
-                    <a href="index.php?act=chitietsp&idsp=<?= $product_id ?>">
-                        <h3><?= $product_name ?></h3>
-                    </a>
-                    <div class="price_box">
-                        <span class="new_price">$<?= $price  ?></span>
+                        <div class="price_box">
+                            <span class="new_price">$<?= $price  ?></span>
+                        </div>
                     </div>
-                    <ul>
-                        <li>
-                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left"
-                                title="Add to favorites"><i class="ti-heart"></i><span>Add to favorites</span></a>
-                        </li>
-                        <li>
-                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left"
-                                title="Add to compare"><i class="ti-control-shuffle"></i><span>Add to compare</span></a>
-                        </li>
-                        <li>
-                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left"
-                                title="Add to cart"><i class="ti-shopping-cart"></i><span>Add to cart</span></a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- /grid_item -->
+                    <form action="index.php?act=addtocart" method="post">
+                        <input type="hidden" name="product_id" value="<?= $product_id ?>">
+                        <input type="hidden" name="product_name" value="<?= $product_name ?>">
+                        <input type="hidden" name="image" value="<?= $image ?>">
+                        <input type="hidden" name="size" value="<?= $size ?>">
+                        <input type="hidden" name="color" value="<?= $color ?>">
+                        <input type="hidden" name="price" value="<?= $price ?>">
+                        <input type="hidden" name="quantity" value="<?= $quantity ?>">
+                        <input type="submit" name="addtocart" value="ADD TO CART">
 
-            </div>
+                    </form>
+                    <!-- /grid_item -->
+
+                </div>
             <?php endforeach; ?>
             <!-- /col -->
             <!-- /col -->
@@ -160,7 +154,7 @@
     </div>
     <!-- /container -->
 
-    <div class="container margin_60_35">
+    <div class=" container margin_60_35">
         <div class="main_title">
             <h2>SẢN PHẨM NỔI BẬT</h2>
             <span>Products</span>
@@ -168,44 +162,43 @@
         </div>
         <div class="owl-carousel owl-theme products_carousel">
             <?php foreach ($product_old as $key => $product) : ?>
-            <?php extract($product); ?>
-            <div class="item">
+                <?php extract($product); ?>
+                <div class="item">
 
-                <div class="grid_item">
-                    <span class="ribbon new">New</span>
-                    <figure>
+                    <div class="grid_item">
+                        <span class="ribbon new">New</span>
+                        <figure>
+                            <a href="index.php?act=chitietsp&idsp=<?= $product_id ?>">
+                                <img class="owl-lazy" src="upload/<?= $image ?>" data-src="upload/<?= $image ?>" alt="" />
+                            </a>
+                        </figure>
+                        <div class="rating">
+                            <i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star"></i>
+                        </div>
                         <a href="index.php?act=chitietsp&idsp=<?= $product_id ?>">
-                            <img class="owl-lazy" src="upload/<?= $image ?>" data-src="upload/<?= $image ?>" alt="" />
+                            <h3><?= $product_name ?></h3>
                         </a>
-                    </figure>
-                    <div class="rating">
-                        <i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i
-                            class="icon-star voted"></i><i class="icon-star"></i>
+                        <div class="price_box">
+                            <span class="new_price">$<?= $price ?></span>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to favorites"><i class="ti-heart"></i><span>Add to
+                                        favorites</span></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to compare"><i class="ti-control-shuffle"></i><span>Add to
+                                        compare</span></a>
+                            </li>
+                            <li>
+                                <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart"><i class="ti-shopping-cart"></i><span>Add to
+                                        cart</span></a>
+                            </li>
+                        </ul>
                     </div>
-                    <a href="index.php?act=chitietsp&idsp=<?= $product_id ?>">
-                        <h3><?= $product_name ?></h3>
-                    </a>
-                    <div class="price_box">
-                        <span class="new_price">$<?= $price ?></span>
-                    </div>
-                    <ul>
-                        <li>
-                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left"
-                                title="Add to favorites"><i class="ti-heart"></i><span>Add to favorites</span></a>
-                        </li>
-                        <li>
-                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left"
-                                title="Add to compare"><i class="ti-control-shuffle"></i><span>Add to compare</span></a>
-                        </li>
-                        <li>
-                            <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left"
-                                title="Add to cart"><i class="ti-shopping-cart"></i><span>Add to cart</span></a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- /grid_item -->
+                    <!-- /grid_item -->
 
-            </div>
+                </div>
             <?php endforeach; ?>
 
             <!-- /products_carousel -->

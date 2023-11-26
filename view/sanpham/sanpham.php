@@ -4,15 +4,15 @@
             <div class="container">
                 <div class="breadcrumbs">
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Category</a></li>
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="index.php?act=sanpham">Category</a></li>
                         <li>Page active</li>
                     </ul>
                 </div>
-                <h1>Shoes - Grid listing</h1>
+                <h1>Quần-Áo</h1>
             </div>
         </div>
-        <img src="img/bg_cat_shoes.jpg" class="img-fluid" alt="">
+        <img src="view/img/mauanh1.jpg" data-src="view/img/mauanh1.jpg" alt="" class="img-fluid" />
     </div>
     <!-- /top_banner -->
     <div id="stick_here"></div>
@@ -20,21 +20,8 @@
         <div class="container">
             <ul class="clearfix">
                 <li>
-                    <div class="sort_select">
-                        <select name="sort" id="sort">
-                            <option value="popularity" selected="selected">Sort by popularity</option>
-                            <option value="rating">Sort by average rating</option>
-                            <option value="date">Sort by newness</option>
-                            <option value="price">Sort by price: low to high</option>
-                            <option value="price-desc">Sort by price: high to
-                        </select>
-                    </div>
-                </li>
-                <li>
-                    <a href="#0"><i class="ti-view-grid"></i></a>
-                    <a href="listing-row-1-sidebar-left.html"><i class="ti-view-list"></i></a>
-                </li>
-                <li>
+
+
                     <a href="#0" class="open_filters">
                         <i class="ti-filter"></i><span>Filters</span>
                     </a>
@@ -71,15 +58,20 @@
                             </div>
                             <ul>
                                 <li><a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left"
-                                        title="Add to favorites"><i class="ti-heart"></i><span>Add to
-                                            favorites</span></a></li>
-                                <li><a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left"
-                                        title="Add to compare"><i class="ti-control-shuffle"></i><span>Add to
-                                            compare</span></a></li>
-                                <li><a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left"
                                         title="Add to cart"><i class="ti-shopping-cart"></i><span>Add to cart</span></a>
                                 </li>
                             </ul>
+                            <form action="index.php?act=addtocart" method="post">
+                                <input type="hidden" name="product_id" value="<?= $product_id ?>">
+                                <input type="hidden" name="product_name" value="<?= $product_name ?>">
+                                <input type="hidden" name="image" value="<?= $image ?>">
+                                <input type="hidden" name="size" value="<?= $size ?>">
+                                <input type="hidden" name="color" value="<?= $color ?>">
+                                <input type="hidden" name="price" value="<?= $price ?>">
+                                <input type="hidden" name="quantity" value="<?= $quantity ?>">
+                                <input type="submit" name="addtocart" value="ADD TO CART">
+
+                            </form>
                         </div>
                         <!-- /grid_item -->
                     </div>
@@ -92,20 +84,20 @@
                 <!-- /row -->
                 <div class="pagination__wrapper">
                     <ul class="pagination">
-                        <li><a href="#0" class="prev" title="previous page">&#10094;</a></li>
+                        <li><a href="index.php?act=sanpham&page=<?= $page > 1 ? $page - 1 : 1 ?>" class="prev"
+                                title="previous page">&#10094;</a></li>
+                        <?php
+                        $Pagepagination = ceil($countsp / $limit);
+                        for ($i = 1; $i < $Pagepagination; $i++) :
+                        ?>
                         <li>
-                            <a href="#0" class="active">1</a>
+                            <a href="index.php?act=sanpham&page=<?= $i ?>" class="<?= $i == $page ? 'active' : '' ?>">
+                                <?= $i ?>
+                            </a>
+                            <?php endfor; ?>
                         </li>
-                        <li>
-                            <a href="#0">2</a>
-                        </li>
-                        <li>
-                            <a href="#0">3</a>
-                        </li>
-                        <li>
-                            <a href="#0">4</a>
-                        </li>
-                        <li><a href="#0" class="next" title="next page">&#10095;</a></li>
+                        <li><a href="index.php?act=sanpham&page<?= $page < $Pagepagination ? $page + 1 : $page ?>"
+                                class="next" title="next page">&#10095;</a></li>
                     </ul>
                 </div>
             </div>
@@ -140,7 +132,7 @@
 
 
                     <div class="filter_type version_2">
-                        <h4><a href="#filter_4" data-bs-toggle="collapse" class="closed">Price</a></h4>
+                        <h4><a href="#filter_4" data-bs-toggle="collapse" class="closed">Giá</a></h4>
                         <div class="collapse" id="filter_4">
                             <ul>
                                 <?php foreach ($productnew as $key => $product) {
@@ -159,7 +151,7 @@
                     </div>
                     <!-- /filter_type -->
                     <div class="buttons">
-                        <a href="index.php?act=sanpham&idct_dm=" .$category_id class="btn_1">Filter</a> <a
+                        <a href="index.php?act=sanpham&idct_dm=" .$category_id class="btn_1">Lọc</a> <a
                             href="index.php?act=sanpham&idct_dm" class="btn_1 gray">Reset</a>
                     </div>
                 </div>
