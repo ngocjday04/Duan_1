@@ -8,15 +8,15 @@
     <!-- Thêm thư viện Bootstrap -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        /* Tùy chỉnh các kiểu CSS của bạn ở đây */
+    /* Tùy chỉnh các kiểu CSS của bạn ở đây */
 
-        .mt-5 {
-            margin-top: 5rem;
-        }
+    .mt-5 {
+        margin-top: 5rem;
+    }
 
-        .mb-3 {
-            margin-bottom: 1rem;
-        }
+    .mb-3 {
+        margin-bottom: 1rem;
+    }
     </style>
 </head>
 

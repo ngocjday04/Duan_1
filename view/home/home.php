@@ -136,11 +136,10 @@
                         <input type="hidden" name="product_id" value="<?= $product_id ?>">
                         <input type="hidden" name="product_name" value="<?= $product_name ?>">
                         <input type="hidden" name="image" value="<?= $image ?>">
-                        <input type="hidden" name="size" value="<?= $size ?>">
-                        <input type="hidden" name="color" value="<?= $color ?>">
                         <input type="hidden" name="price" value="<?= $price ?>">
-                        <input type="hidden" name="quantity" value="<?= $quantity ?>">
-                        <input type="submit" name="addtocart" value="ADD TO CART">
+
+
+                        <input type="submit" class="btn_1" name="addtocart" value="ADD TO CART">
 
                     </form>
                     <!-- /grid_item -->
@@ -182,14 +181,6 @@
                             <span class="new_price">$<?= $price ?></span>
                         </div>
                         <ul>
-                            <li>
-                                <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to favorites"><i class="ti-heart"></i><span>Add to
-                                        favorites</span></a>
-                            </li>
-                            <li>
-                                <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to compare"><i class="ti-control-shuffle"></i><span>Add to
-                                        compare</span></a>
-                            </li>
                             <li>
                                 <a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart"><i class="ti-shopping-cart"></i><span>Add to
                                         cart</span></a>

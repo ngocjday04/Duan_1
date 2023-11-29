@@ -27,7 +27,12 @@ function loadall_taikhoan()
     $listtaikhoan = pdo_query($sql);
     return $listtaikhoan;
 }
-
+function loadone_taikhoan($user_id)
+{
+    $sql = "SELECT * FROM users where user_id = ? ";
+    $listtaikhoan = pdo_query_one($sql, $user_id);
+    return $listtaikhoan;
+}
 function delete_taikhoan($user_id)
 {
     $user_id = $_GET['id'];

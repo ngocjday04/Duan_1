@@ -56,3 +56,9 @@ function delete_thuoctinh($variant_id)
     $sql = "DELETE FROM  variants WHERE variant_id=" . $variant_id;
     pdo_execute($sql);
 }
+function load_variant_product($product_id)
+{
+    $sql = "SELECT*FROM variants where product_id = $product_id";
+    $list_variant = pdo_query($sql);
+    return $list_variant;
+}

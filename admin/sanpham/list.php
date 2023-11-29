@@ -87,6 +87,22 @@
                     <input type="button" value="Xóa các mục đã chọn" class="btn btn-danger">
                     <a href="index.php?act=createsp" class="btn btn-primary">Nhập thêm</a>
                 </div>
+                <div class="pagination__wrapper">
+                    <ul class="pagination">
+                        <li><a href="index.php?act=listsp&page=<?= $page > 1 ? $page - 1 : 1 ?>" class="prev" title="previous page">&#10094;</a></li>
+                        <?php
+                        $Pagepagination = ceil($countsp / $limit);
+                        for ($i = 1; $i < $Pagepagination; $i++) :
+                        ?>
+                            <li>
+                                <a href="index.php?act=listsp&page=<?= $i ?>" class="<?= $i == $page ? 'active' : '' ?>">
+                                    <?= $i ?>
+                                </a>
+                            <?php endfor; ?>
+                            </li>
+                            <li><a href="index.php?act=listsp&page<?= $page < $Pagepagination ? $page + 1 : $page ?>" class="next" title="next page">&#10095;</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>

@@ -74,12 +74,16 @@ if (isset($_GET['act'])) {
         case 'listsp':
             if (isset($_POST['listok']) && ($_POST['listok'])) {
                 $kyw = $_POST['kyw'];
-                $id_danhmuc = $_POST['category_id'];
+                $category_id = $_POST['category_id'];
             } else {
                 $kyw = "";
                 $category_id = 0;
             }
-            $product = loadall_product($kyw = "", $category_id = 0, 0, 0);
+            $limit = 5;
+            $page = $_GET['page'] ?? 1;
+            $start = ($page - 1) * $limit;
+            $countsp = count(loadall_product($kyw, $category_id, 0, 999999999));
+            $product = loadall_product($kyw, $category_id, $start,  $limit);
             $danhmuc = loadall_categories();
             include "../admin/sanpham/list.php";
             break;
@@ -165,11 +169,16 @@ if (isset($_GET['act'])) {
             include "../admin/binhluan/list.php";
             break;
         case 'xoabl':
-            if (isset($_GET['comment_id'])) {
-                delete_comment($_GET['comment_id']);
+            if (isset($_GET['comment_id']) && ($_GET['comment_id'] > 0)) {
+                $id = $_GET['comment_id'];
+            } else {
+                $id = "";
             }
+
+            delete_comment($id);
             $listcmt = comment_selectall();
-            include "../admin/binhluan/list.php";
+            header('Location:' . $_SERVER['HTTP_REFERER']);
+            // include "../admin/binhluan/list.php";
             break;
 
         case 'add-thuoctinh':

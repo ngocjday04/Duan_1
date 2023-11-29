@@ -33,86 +33,83 @@
 
 
     <div class="container margin_30">
+        <form action="index.php?act=addtocart" method="post">
 
-        <div class="row">
-            <div class="col-lg-9">
-                <div class="row small-gutters">
+            <div class="row">
+                <div class="col-lg-9">
+                    <div class="row small-gutters">
 
-                    <!-- /col -->
-                    <?php foreach ($listproduct as $key => $value) : ?>
-                    <?php extract($value);
-                        ?>
-                    <div class="col-6 col-md-4">
-                        <div class="grid_item">
-                            <span class="ribbon new">New</span>
-                            <figure>
-                                <a href="index.php?act=chitietsp&idsp=<?= $product_id ?>">
-                                    <img class="img-fluid lazy" src="upload/<?= $image ?>">
-                                </a>
-                            </figure>
-                            <a href="index.php?act=chitietsp&idsp=<?= $product_id ?>">
-                                <h3><?= $product_name ?></h3>
-                            </a>
-                            <div class="price_box">
-                                <span class="new_price">$<?= $price ?></span>
+                        <!-- /col -->
+                        <?php foreach ($listproduct as $key => $value) : ?>
+                            <?php extract($value);
+                            ?>
+                            <div class="col-6 col-md-4">
+                                <div class="grid_item">
+                                    <span class="ribbon new">New</span>
+                                    <figure>
+                                        <a href="index.php?act=chitietsp&idsp=<?= $product_id ?>">
+                                            <img class="img-fluid lazy" src="upload/<?= $image ?>">
+                                        </a>
+                                    </figure>
+                                    <a href="index.php?act=chitietsp&idsp=<?= $product_id ?>">
+                                        <h3><?= $product_name ?></h3>
+                                    </a>
+                                    <div class="price_box">
+                                        <span class="new_price">$<?= $price ?></span>
+                                    </div>
+                                    <ul>
+                                        <li><a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart"><i class="ti-shopping-cart"></i><span>Add to
+                                                    cart</span></a>
+                                        </li>
+                                    </ul>
+                                    <input type="hidden" name="product_id" value="<?= $product_id ?>">
+                                    <input type="hidden" name="product_name" value="<?= $product_name ?>">
+                                    <input type="hidden" name="image" value="<?= $image ?>">
+                                    <input type="hidden" name="size" value="<?= $size ?>">
+                                    <input type="hidden" name="price" value="<?= $price ?>">
+                                    <input type="hidden" name="quantity" value="<?= $quantity ?>">
+                                    <input type="submit" name="addtocart" class="btn_1" value="ADD TO CART">
+
+                                </div>
+                                <!-- /grid_item -->
                             </div>
-                            <ul>
-                                <li><a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left"
-                                        title="Add to cart"><i class="ti-shopping-cart"></i><span>Add to cart</span></a>
-                                </li>
-                            </ul>
-                            <form action="index.php?act=addtocart" method="post">
-                                <input type="hidden" name="product_id" value="<?= $product_id ?>">
-                                <input type="hidden" name="product_name" value="<?= $product_name ?>">
-                                <input type="hidden" name="image" value="<?= $image ?>">
-                                <input type="hidden" name="size" value="<?= $size ?>">
-                                <input type="hidden" name="color" value="<?= $color ?>">
-                                <input type="hidden" name="price" value="<?= $price ?>">
-                                <input type="hidden" name="quantity" value="<?= $quantity ?>">
-                                <input type="submit" name="addtocart" value="ADD TO CART">
+                            <!-- /col -->
+                        <?php endforeach; ?>
+        </form>
+        <!-- /col -->
 
-                            </form>
-                        </div>
-                        <!-- /grid_item -->
-                    </div>
-                    <!-- /col -->
-                    <?php endforeach; ?>
-                    <!-- /col -->
+        <!-- /col -->
+    </div>
+    <!-- /row -->
+    <div class="pagination__wrapper">
+        <ul class="pagination">
+            <li><a href="index.php?act=sanpham&page=<?= $page > 1 ? $page - 1 : 1 ?>" class="prev" title="previous page">&#10094;</a></li>
+            <?php
+            $Pagepagination = ceil($countsp / $limit);
+            for ($i = 1; $i < $Pagepagination; $i++) :
+            ?>
+                <li>
+                    <a href="index.php?act=sanpham&page=<?= $i ?>" class="<?= $i == $page ? 'active' : '' ?>">
+                        <?= $i ?>
+                    </a>
+                <?php endfor; ?>
+                </li>
+                <li><a href="index.php?act=sanpham&page<?= $page < $Pagepagination ? $page + 1 : $page ?>" class="next" title="next page">&#10095;</a></li>
+        </ul>
+    </div>
+    </div>
+    <!-- /col -->
 
-                    <!-- /col -->
-                </div>
-                <!-- /row -->
-                <div class="pagination__wrapper">
-                    <ul class="pagination">
-                        <li><a href="index.php?act=sanpham&page=<?= $page > 1 ? $page - 1 : 1 ?>" class="prev"
-                                title="previous page">&#10094;</a></li>
-                        <?php
-                        $Pagepagination = ceil($countsp / $limit);
-                        for ($i = 1; $i < $Pagepagination; $i++) :
-                        ?>
-                        <li>
-                            <a href="index.php?act=sanpham&page=<?= $i ?>" class="<?= $i == $page ? 'active' : '' ?>">
-                                <?= $i ?>
-                            </a>
-                            <?php endfor; ?>
-                        </li>
-                        <li><a href="index.php?act=sanpham&page<?= $page < $Pagepagination ? $page + 1 : $page ?>"
-                                class="next" title="next page">&#10095;</a></li>
-                    </ul>
-                </div>
-            </div>
-            <!-- /col -->
+    <aside class="col-lg-3" id="sidebar_fixed">
+        <div class="filter_col">
+            <div class="inner_bt"><a href="#" class="open_filters"><i class="ti-close"></i></a></div>
+            <div class="filter_type version_2">
+                <h4><a href="#filter_1" data-bs-toggle="collapse" class="opened">Danh Muc</a></h4>
 
-            <aside class="col-lg-3" id="sidebar_fixed">
-                <div class="filter_col">
-                    <div class="inner_bt"><a href="#" class="open_filters"><i class="ti-close"></i></a></div>
-                    <div class="filter_type version_2">
-                        <h4><a href="#filter_1" data-bs-toggle="collapse" class="opened">Danh Muc</a></h4>
-
-                        <div class="collapse show" id="filter_1">
-                            <ul>
-                                <?php foreach ($listdm as $key => $dm) {
-                                    echo '
+                <div class="collapse show" id="filter_1">
+                    <ul>
+                        <?php foreach ($listdm as $key => $dm) {
+                            echo '
                               
                                 <li>
                                     <label class="container_check">' . $dm['category_name'] . '
@@ -120,23 +117,23 @@
                                         <span class="checkmark"><a href="index.php?act=sanpham&idct_dm=' . $dm['category_id'] . '"></span>
                                     </label>
                                 </li>';
-                                } ?>
+                        } ?>
 
 
-                            </ul>
-                        </div>
+                    </ul>
+                </div>
 
-                        <!-- /filter_type -->
-                    </div>
-                    <!-- /filter_type -->
+                <!-- /filter_type -->
+            </div>
+            <!-- /filter_type -->
 
 
-                    <div class="filter_type version_2">
-                        <h4><a href="#filter_4" data-bs-toggle="collapse" class="closed">Giá</a></h4>
-                        <div class="collapse" id="filter_4">
-                            <ul>
-                                <?php foreach ($productnew as $key => $product) {
-                                    echo '
+            <div class="filter_type version_2">
+                <h4><a href="#filter_4" data-bs-toggle="collapse" class="closed">Giá</a></h4>
+                <div class="collapse" id="filter_4">
+                    <ul>
+                        <?php foreach ($productnew as $key => $product) {
+                            echo '
                               
                                 <li>
                                     <label class="container_check">$' . $product['price'] . '
@@ -144,21 +141,20 @@
                                         <span class="checkmark"><a href="index.php?act=sanpham&idsp=' . $product['product_id'] . '"></span>
                                     </label>
                                 </li>';
-                                } ?>
+                        } ?>
 
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- /filter_type -->
-                    <div class="buttons">
-                        <a href="index.php?act=sanpham&idct_dm=" .$category_id class="btn_1">Lọc</a> <a
-                            href="index.php?act=sanpham&idct_dm" class="btn_1 gray">Reset</a>
-                    </div>
+                    </ul>
                 </div>
-            </aside>
-            <!-- /col -->
+            </div>
+            <!-- /filter_type -->
+            <div class="buttons">
+                <a href="index.php?act=sanpham&idct_dm=" .$category_id class="btn_1">Lọc</a> <a href="index.php?act=sanpham&idct_dm" class="btn_1 gray">Reset</a>
+            </div>
         </div>
-        <!-- /row -->
+    </aside>
+    <!-- /col -->
+    </div>
+    <!-- /row -->
 
     </div>
     <!-- /container -->

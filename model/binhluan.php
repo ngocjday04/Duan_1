@@ -1,7 +1,8 @@
 <?php
-function insert_comment($content, $user_id, $product_id, $date_comment)
+function insert__comment($userId, $productId, $content)
 {
-    $sql = "INSERT INTO comments(content,user_id,product_id,date_comment) VALUES('$content','$user_id','$product_id','$date_comment')";
+    $sql = "INSERT INTO `comments`(`user_id`, `product_id`, `content`) VALUES 
+            ('$userId','$productId','$content')";
     pdo_execute($sql);
 }
 function loadall_comment($product_id)
@@ -12,9 +13,30 @@ function loadall_comment($product_id)
     $listcmt = pdo_query($sql);
     return $listcmt;
 }
-function delete_comment($user_id)
+function loadall__comment__Byid($idproduct)
 {
-    $sql = " DELETE FROM comments WHERE user_id=" . $user_id;
+    $sql = "SELECT
+                comments.comment_id,
+                comments.user_id,
+                comments.product_id,
+                comments.content,
+                comments.date_comment,
+                users.user_id,
+                users.user_name
+            FROM
+                comments
+            INNER JOIN
+                users ON comments.user_id = users.user_id
+            INNER JOIN
+                product ON comments.product_id = product.product_id
+            WHERE
+                product.product_id = $idproduct
+    ";
+    return pdo_query($sql);
+}
+function delete_comment($comment_id)
+{
+    $sql = " DELETE FROM comments WHERE comment_id=" . $comment_id;
     pdo_execute($sql);
 }
 function comment_selectall($sql = '')

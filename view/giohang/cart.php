@@ -11,47 +11,32 @@
             <h1>Cart page</h1>
         </div>
         <!-- /page_header -->
-        <table class="table table-striped cart-list">
+        <?php
+        if (isset($_SESSION['mycart']) && (count($_SESSION['mycart']) > 0)) {
+            echo '
+                <table class="table table-striped cart-list">
             <thead>
                 <tr>
-                    <th>
-                        Tên
-                    </th>
-                    <th>
-                        Hình
-                    </th>
-                    <th>
-                        Giá
-                    </th>
-                    <th>
-                        Màu
-                    </th>
-                    <th>
-                        Số lượng
-                    </th>
-                    <th>
-                        Kích cỡ
-                    </th>
-
-                    <th>
-                        Tổng tiền
-                    </th>
+                    <th>Tên</th>
+                    <th>Hình</th>
+                    <th>Giá</th>
+                    <th>Số lượng</th>
+                    <th>Kích cỡ </th>
+                    <th>Tổng tiền</th>
                     <th>
 
                     </th>
                 </tr>
-            </thead>
-            <tbody>
-                <?php
-                // var_dump($_SESSION['mycart']);
-                $tong = 0;
-                $i = 0;
-                foreach ($_SESSION['mycart'] as $cart) {
-                    $tong += $cart[7];
-                    $thanhtien = $price * $quantity;
-                    $image = $image_path . $cart[2];
-                    $delcart = ' <a href="index.php?act=delete_cart&idcart=' . $i . '"><i class="ti-trash"></i></a>';
-                    echo '<tr>
+            </thead>';
+            // var_dump($_SESSION['mycart']);
+            $tong = 0;
+            $i = 0;
+            foreach ($_SESSION['mycart'] as $cart) {
+                $tong += $cart[6];
+                $thanhtien = (int)($cart[3]) * (int)$cart[6];
+                $image = $image_path . $cart[2];
+                $delcart = ' <a href="index.php?act=deletecart&i=' . $i . '"><i class="ti-trash"></i></a>';
+                echo '<tr>
                     <td>
                     <span class="item_cart">' . $cart[1] . '</span>
                     </td>
@@ -64,36 +49,32 @@
                     $ ' . $cart[3] . '
                     </td>
                     <td>
-                       ' . $cart[5] . '
-                    </td>
-                    <td>
-                      
-                            <input type="number" value="' . $cart[6] . '" id="quantity_1" class="qty2" name="quantity_1">
-                       
+                            <input type="number" value="' . $cart[5] . '" id="quantity_1" class="qty2" name="quantity_1">
                     </td>
                     <td>
                        ' . $cart[4] . '
                     </td>
                     <td>
-                       $' . $cart[7] . '
+                       $' . $cart[6] . '
                     </td>
 
                     <td class="options">
                     ' . $delcart . '
                     </td>
                 </tr>';
-                    $i += 1;
-                
-                    echo '
+                $i += 1;
+            }
+
+            echo '
                 <tr>
-                <td colspan ="6"><strong> Tổng tiền : </strong> </td>
-                <td><strong>$' . $tong . '</strong></td>
+                <td colspan ="5"><h5> Tổng tiền : </h5> </td>
+                <td><h5>$' . $tong . '</h5></td>
                 <td></td>
                 
                 </tr> ';
-                }
-                ?>
-            </tbody>
+        }
+        ?>
+        </tbody>
         </table>
 
         <div class="row add_top_30 flex-sm-row-reverse cart_actions">
@@ -108,13 +89,11 @@
         <div class="container">
             <div class="row justify-content-end">
                 <div class="col-xl-4 col-lg-4 col-md-6">
-                    <ul>
 
-                        <li>
-                            <span><input type="text" value="<?= $tong ?>" name="tien" hidden></span>
-                        </li>
-                    </ul>
-                    <a href="index.php?act=checkout" class="btn_1 full-width cart">Proceed to Checkout</a>
+                    <a href="index.php" class="btn_1 full-width cart">Tiếp tục mua hàng</a>
+                    <a href="index.php?act=deletecart" class="btn_1 full-width cart">Xóa giỏ hàng</a>
+                    <a href="index.php?act=checkout" class="btn_1 full-width cart">Thanh toán</a>
+
                 </div>
             </div>
         </div>

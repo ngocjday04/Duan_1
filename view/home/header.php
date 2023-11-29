@@ -61,8 +61,7 @@
                             <!-- Mobile menu button -->
                             <div class="main-menu">
                                 <div id="header_menu">
-                                    <a href="index.html"><img src="view/img/logo_black.svg" alt="" width="100"
-                                            height="35"></a>
+                                    <a href="index.html"><img src="view/img/logo_black.svg" alt="" width="100" height="35"></a>
                                     <a href="#" class="open_close" id="close_in"><i class="ti-close"></i></a>
                                 </div>
                                 <ul>
@@ -126,12 +125,12 @@
                                         <div id="menu">
                                             <ul>
                                                 <?php foreach ($listdm as $key => $dm) : ?>
-                                                <?php extract($dm);
+                                                    <?php extract($dm);
                                                     $category_dt = "index.php?act=sanpham&idct_dm=" . $category_id;
                                                     ?>
-                                                <li><span><a href="<?= $category_dt ?>"><?= $category_name ?></a></span>
+                                                    <li><span><a href="<?= $category_dt ?>"><?= $category_name ?></a></span>
 
-                                                </li>
+                                                    </li>
                                                 <?php endforeach; ?>
                                             </ul>
                                         </div>
@@ -143,10 +142,8 @@
                         <div class="col-xl-6 col-lg-7 col-md-6 d-none d-md-block">
                             <div class="custom-search-input">
                                 <form action="index.php?act=sanpham" method="post">
-                                    <input type="text" class="form-control" name="kyw"
-                                        placeholder="Tìm kiếm tại đây ..." />
-                                    <button type="submit" name="timkiem"><i
-                                            class="header-icon_search_custom"></i></button>
+                                    <input type="text" class="form-control" name="kyw" placeholder="Tìm kiếm tại đây ..." />
+                                    <button type="submit" name="timkiem"><i class="header-icon_search_custom"></i></button>
                                 </form>
                             </div>
                         </div>
@@ -154,26 +151,19 @@
                             <ul class="top_tools">
                                 <li>
                                     <div class="dropdown dropdown-cart">
-                                        <a href="index.php?act=addtocart" class="cart_bt"
-                                            id="cart_bt"><strong></strong></a>
+                                        <a href="index.php?act=addtocart" class="cart_bt" id="cart_bt"><strong></strong></a>
                                         <div class="dropdown-menu">
                                             <ul>
                                                 <li>
                                                     <a href="product-detail-1.html">
-                                                        <figure><img
-                                                                src="view/img/products/product_placeholder_square_small.jpg"
-                                                                data-src="view/img/products/shoes/thumb/1.jpg" alt=""
-                                                                width="50" height="50" class="lazy"></figure>
+                                                        <figure><img src="view/img/products/product_placeholder_square_small.jpg" data-src="view/img/products/shoes/thumb/1.jpg" alt="" width="50" height="50" class="lazy"></figure>
                                                         <strong><span>1x Armor Air x Fear</span>$90.00</strong>
                                                     </a>
                                                     <a href="#0" class="action"><i class="ti-trash"></i></a>
                                                 </li>
                                                 <li>
                                                     <a href="product-detail-1.html">
-                                                        <figure><img
-                                                                src="view/img/products/product_placeholder_square_small.jpg"
-                                                                data-src="view/img/products/shoes/thumb/2.jpg" alt=""
-                                                                width="50" height="50" class="lazy"></figure>
+                                                        <figure><img src="view/img/products/product_placeholder_square_small.jpg" data-src="view/img/products/shoes/thumb/2.jpg" alt="" width="50" height="50" class="lazy"></figure>
                                                         <strong><span>1x Armor Okwahn II</span>$110.00</strong>
                                                     </a>
                                                     <a href="0" class="action"><i class="ti-trash"></i></a>
@@ -181,8 +171,7 @@
                                             </ul>
                                             <div class="total_drop">
                                                 <div class="clearfix"><strong>Total</strong><span>$200.00</span></div>
-                                                <a href="index.php?act=addtocart" class="btn_1 outline">View Cart</a><a
-                                                    href="index.php?act=checkout" class="btn_1">Checkout</a>
+                                                <a href="index.php?act=addtocart" class="btn_1 outline">View Cart</a><a href="index.php?act=checkout" class="btn_1">Checkout</a>
                                             </div>
                                         </div>
                                     </div>
@@ -192,22 +181,25 @@
                                     <a href="#0" class="wishlist"><span>Wishlist</span></a>
                                 </li>
                                 <li>
-                                    <?php
-                                    if (isset($_SESSION['user_name']) && ($_SESSION['user_name'] != "")) {
-                                        echo '<a href="index.php?act=account"> ' . $_SESSION['user_name']['user_name'] . '</a>';
-                                        echo '<a href="index.php?act=thoat"> Thoát</a>';
-                                    } else {
-                                        echo '
-                                    <a href="index.php?act=account"> ĐĂNG NHẬP </a>';
-                                    }
-                                    ?>
+
                                     <div class="dropdown dropdown-access">
                                         <?php
-                                        // if (isset($_SESSION['user_name'])&&($_SESSION['user_name'])){}
+                                        if (isset($_SESSION['user_name']) && ($_SESSION['user_name'] != "")) {
+                                            echo '<a href="index.php?act=account"> ' . $_SESSION['user_name']['user_name'] . '</a>';
+                                        } else {
+                                            echo '
+                                    <a href="index.php?act=log-in"> ĐĂNG NHẬP </a>';
+                                        }
                                         ?>
-                                        <a href="index.php?act=account" class="access_link"><span>Tài khoản</span></a>
+                                        <!-- <a href="index.php?act=account" class="access_link"><span>Tài khoản</span></a> -->
                                         <div class="dropdown-menu">
-                                            <a href="index.php?act=account" class="btn_1">Đăng nhập or Đăng Ký</a>
+                                            <?php
+                                            if (isset($_SESSION['user_name'])) {
+                                                echo ' ';
+                                            } else {
+                                                echo   '<a href="index.php?act=creat_acc" class="btn_1">Đăng Ký</a>';
+                                            }
+                                            ?>
                                             <ul>
                                                 <li>
                                                     <a href="index.php?act=trackorder"><i class="ti-truck"></i>Theo dỗi
@@ -218,7 +210,10 @@
                                                         của tôi</a>
                                                 </li>
                                                 <li>
-                                                    <a href="index.php?act=account"><i class="ti-user"></i>Thông tin</a>
+                                                    <a href="index.php?act=showtt"><i class="ti-user"></i>Thông tin</a>
+                                                </li>
+                                                <li>
+                                                    <a href="index.php?act=thoat"> Thoát</a>
                                                 </li>
                                             </ul>
                                         </div>
