@@ -31,12 +31,7 @@
                                     <input type="number" name="product_id" class="form-control" placeholder="masp">
                                 </div>
                             </div>
-                            <div class="form-group row">
-                                <label for="color" class="col-md-2 col-form-label">Màu sắc:</label>
-                                <div class="col-md-10">
-                                    <input type="text" name="color" class="form-control">
-                                </div>
-                            </div>
+
                             <div class="form-group row">
                                 <label for="size" class="col-md-2 col-form-label">Kích cỡ:</label>
                                 <div class="col-md-10">

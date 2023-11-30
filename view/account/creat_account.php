@@ -24,13 +24,21 @@
 
                     <div class="divider"><span>Đăng ký</span></div>
                     <div class="form-group">
-                        <input type="text" class="form-control" name="user_name" id="user_name" placeholder="Tên đăng nhập*">
+                        <input type="text" class="form-control" name="user_name" id="user_name"
+                            placeholder="Tên đăng nhập*">
                     </div>
                     <div class="form-group">
-                        <input type="password" class="form-control" name="password" id="password" placeholder="Mật khẩu*">
+                        <input type="password" class="form-control" name="password" id="password"
+                            placeholder="Mật khẩu*">
                     </div>
                     <div class="form-group">
                         <input type="text" class="form-control" name="email" id="email" placeholder="Email*">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="address" id="email" placeholder="Địa chỉ*">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="tel" id="email" placeholder="Số điện thoại*">
                     </div>
 
                     <div class="text-center">

@@ -41,39 +41,33 @@
 
                         <!-- /col -->
                         <?php foreach ($listproduct as $key => $value) : ?>
-                            <?php extract($value);
+                        <?php extract($value);
                             ?>
-                            <div class="col-6 col-md-4">
-                                <div class="grid_item">
-                                    <span class="ribbon new">New</span>
-                                    <figure>
-                                        <a href="index.php?act=chitietsp&idsp=<?= $product_id ?>">
-                                            <img class="img-fluid lazy" src="upload/<?= $image ?>">
-                                        </a>
-                                    </figure>
+                        <div class="col-6 col-md-4">
+                            <div class="grid_item">
+                                <span class="ribbon new">New</span>
+                                <figure>
                                     <a href="index.php?act=chitietsp&idsp=<?= $product_id ?>">
-                                        <h3><?= $product_name ?></h3>
+                                        <img class="img-fluid lazy" src="upload/<?= $image ?>">
                                     </a>
-                                    <div class="price_box">
-                                        <span class="new_price">$<?= $price ?></span>
-                                    </div>
-                                    <ul>
-                                        <li><a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left" title="Add to cart"><i class="ti-shopping-cart"></i><span>Add to
-                                                    cart</span></a>
-                                        </li>
-                                    </ul>
-                                    <input type="hidden" name="product_id" value="<?= $product_id ?>">
-                                    <input type="hidden" name="product_name" value="<?= $product_name ?>">
-                                    <input type="hidden" name="image" value="<?= $image ?>">
-                                    <input type="hidden" name="size" value="<?= $size ?>">
-                                    <input type="hidden" name="price" value="<?= $price ?>">
-                                    <input type="hidden" name="quantity" value="<?= $quantity ?>">
-                                    <input type="submit" name="addtocart" class="btn_1" value="ADD TO CART">
-
+                                </figure>
+                                <a href="index.php?act=chitietsp&idsp=<?= $product_id ?>">
+                                    <h3><?= $product_name ?></h3>
+                                </a>
+                                <div class="price_box">
+                                    <span class="new_price">$<?= $price ?></span>
                                 </div>
-                                <!-- /grid_item -->
+                                <ul>
+                                    <li><a href="#0" class="tooltip-1" data-bs-toggle="tooltip" data-bs-placement="left"
+                                            title="Add to cart"><i class="ti-shopping-cart"></i><span>Add to
+                                                cart</span></a>
+                                    </li>
+                                </ul>
+
                             </div>
-                            <!-- /col -->
+                            <!-- /grid_item -->
+                        </div>
+                        <!-- /col -->
                         <?php endforeach; ?>
         </form>
         <!-- /col -->
@@ -83,18 +77,20 @@
     <!-- /row -->
     <div class="pagination__wrapper">
         <ul class="pagination">
-            <li><a href="index.php?act=sanpham&page=<?= $page > 1 ? $page - 1 : 1 ?>" class="prev" title="previous page">&#10094;</a></li>
+            <li><a href="index.php?act=sanpham&page=<?= $page > 1 ? $page - 1 : 1 ?>" class="prev"
+                    title="previous page">&#10094;</a></li>
             <?php
             $Pagepagination = ceil($countsp / $limit);
             for ($i = 1; $i < $Pagepagination; $i++) :
             ?>
-                <li>
-                    <a href="index.php?act=sanpham&page=<?= $i ?>" class="<?= $i == $page ? 'active' : '' ?>">
-                        <?= $i ?>
-                    </a>
+            <li>
+                <a href="index.php?act=sanpham&page=<?= $i ?>" class="<?= $i == $page ? 'active' : '' ?>">
+                    <?= $i ?>
+                </a>
                 <?php endfor; ?>
-                </li>
-                <li><a href="index.php?act=sanpham&page<?= $page < $Pagepagination ? $page + 1 : $page ?>" class="next" title="next page">&#10095;</a></li>
+            </li>
+            <li><a href="index.php?act=sanpham&page<?= $page < $Pagepagination ? $page + 1 : $page ?>" class="next"
+                    title="next page">&#10095;</a></li>
         </ul>
     </div>
     </div>
@@ -148,7 +144,8 @@
             </div>
             <!-- /filter_type -->
             <div class="buttons">
-                <a href="index.php?act=sanpham&idct_dm=" .$category_id class="btn_1">Lọc</a> <a href="index.php?act=sanpham&idct_dm" class="btn_1 gray">Reset</a>
+                <a href="index.php?act=sanpham&idct_dm=" .$category_id class="btn_1">Lọc</a> <a
+                    href="index.php?act=sanpham&idct_dm" class="btn_1 gray">Reset</a>
             </div>
         </div>
     </aside>

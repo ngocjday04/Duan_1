@@ -1,3 +1,9 @@
+<?php
+if (isset($variants) && is_array($variants)) {
+    extract($variants);
+}
+?>
+
 <!DOCTYPE html>
 <html lang="vi">
 
@@ -25,36 +31,20 @@
                             <div class="form-group row">
                                 <label for="variant_id" class="col-md-2 col-form-label">Mã thuộc tính:</label>
                                 <div class="col-md-10">
-                                    <input type="text" name="variant_id" readonly class="form-control" placeholder="maloai">
+                                    <input type="text" name="variant_id" readonly class="form-control" value="<?= $variant_id ?>" placeholder="maloai">
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label for="product_id" class="col-md-2 col-form-label">Mã sản phẩm:</label>
-                                <select name="product_id" id="">
-                                    <?php foreach ($listsanpham as $sanpham) : ?>
-                                        <?php
-                                        if ($sanpham['product_id'] == $variants['product_id']) {
-                                            echo "<option value=" . $sanpham['product_id'] . " selected>" . $sanpham['product_name'] . "</option>";
-                                        } else {
-                                            echo "<option value=" . $sanpham['product_id'] . ">" . $sanpham['product_name'] . "</option>";
-                                        }
-                                        ?>
-                                    <?php endforeach ?>
-                                </select>
-                                <!-- <div class="col-md-10">
-                                    <input type="number" name="product_id" class="form-control" placeholder="masp">
-                                </div> -->
-                            </div>
-                            <div class="form-group row">
-                                <label for="color" class="col-md-2 col-form-label">Màu sắc:</label>
+
                                 <div class="col-md-10">
-                                    <input type="text" name="color" class="form-control" value="<?= $variant['color'] ?>">
+                                    <input type="number" name="product_id" class="form-control" value="<?= $variant['product_id'] ?>" placeholder="masp">
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label for="size" class="col-md-2 col-form-label">Kích cỡ:</label>
                                 <div class="col-md-10">
-                                    <input type="text" name="size" class="form-control" value="<?= $variant['size'] ?>">
+                                    <input type="text" name="size" class="form-control" value="<?= isset($variant['size']) ? $variant['size'] : '' ?>">
                                 </div>
                             </div>
                             <div class="form-group row">
@@ -65,6 +55,7 @@
                             </div>
                             <div class="form-group row">
                                 <div class="col-md-12">
+                                    <input type="hidden" name="variant_id" value="<?= $variant_id ?>">
                                     <input type="submit" name="capnhattt" value="Cập nhật" class="btn btn-primary">
                                     <input type="reset" name="nhaplai" value="Nhập lại" class="btn btn-secondary">
                                     <a href="index.php?act=listthuoctinh" class="btn btn-info">Danh sách</a>

@@ -65,33 +65,23 @@
                                     <a href="#" class="open_close" id="close_in"><i class="ti-close"></i></a>
                                 </div>
                                 <ul>
-                                    <li class="submenu">
-                                        <a href="javascript:void(0);" class="show-submenu">Home</a>
-                                        <ul>
-                                            <li><a href="index.php">Slider</a></li>
-                                            <li><a href="index.php">Video Background</a></li>
-                                            <li><a href="index.php">Vertical Slider</a></li>
-                                            <li><a href="index.php">GDPR Cookie Bar</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="megamenu submenu">
-                                        <a href="javascript:void(0);" class="show-submenu-mega">Pages</a>
-                                        <div class="menu-wrapper">
-
-                                            <!-- /row -->
-                                        </div>
-                                        <!-- /menu-wrapper -->
-                                    </li>
-                                    <li class="submenu">
-                                        <a href="javascript:void(0);" class="show-submenu">Extra Pages</a>
-
+                                    <li>
+                                        <a href="index.php">Trang chủ</a>
                                     </li>
                                     <li>
-                                        <a href="blog.html">Blog</a>
+                                        <a href="index.php?act=contact">Liên hệ</a>
                                     </li>
-                                    <li>
-                                        <a href="#0">Buy Template</a>
+                                    <!-- <li class="submenu">
+                                        <a href="index.php" class="show-submenu">Trang chủ</a>
+
                                     </li>
+
+                                    <li class="submenu">
+                                        <a href="javascript:void(0);" class="show-submenu">Liên hệ</a>
+
+                                    </li> -->
+
+
                                 </ul>
                             </div>
                             <!--/main-menu -->
@@ -149,29 +139,36 @@
                         </div>
                         <div class="col-xl-3 col-lg-2 col-md-3">
                             <ul class="top_tools">
+
                                 <li>
                                     <div class="dropdown dropdown-cart">
                                         <a href="index.php?act=addtocart" class="cart_bt" id="cart_bt"><strong></strong></a>
                                         <div class="dropdown-menu">
                                             <ul>
-                                                <li>
-                                                    <a href="product-detail-1.html">
-                                                        <figure><img src="view/img/products/product_placeholder_square_small.jpg" data-src="view/img/products/shoes/thumb/1.jpg" alt="" width="50" height="50" class="lazy"></figure>
-                                                        <strong><span>1x Armor Air x Fear</span>$90.00</strong>
-                                                    </a>
-                                                    <a href="#0" class="action"><i class="ti-trash"></i></a>
-                                                </li>
-                                                <li>
-                                                    <a href="product-detail-1.html">
-                                                        <figure><img src="view/img/products/product_placeholder_square_small.jpg" data-src="view/img/products/shoes/thumb/2.jpg" alt="" width="50" height="50" class="lazy"></figure>
-                                                        <strong><span>1x Armor Okwahn II</span>$110.00</strong>
-                                                    </a>
-                                                    <a href="0" class="action"><i class="ti-trash"></i></a>
-                                                </li>
+                                                <?php
+                                                $tong = 0;
+                                                $i = 0;
+                                                foreach ($_SESSION['mycart'] as $cart) :
+                                                    $thanhtien = (int)($cart[3]) * (int)$cart[5];
+                                                    $tong += $thanhtien;
+                                                    $image = $image_path . $cart[2];
+                                                    $delcart = ' <a href="index.php?act=deletecart&i=' . $i . '"><i class="ti-trash"></i></a>';
+                                                ?>
+                                                    <li>
+                                                        <figure><img src="<?= $image ?>" data-src="<?= $image ?>" alt="" width="50" height="50" class="lazy"></figure>
+                                                        <strong><span><?= $cart[1] ?></span><?= $cart[3] ?></strong>
+                                                        </a>
+                                                        <a href="index.php?act=deletecart&i=' . $i . '" class="action"><i class="ti-trash"></i></a>
+                                                    </li>
+                                                <?php endforeach; ?>
                                             </ul>
                                             <div class="total_drop">
-                                                <div class="clearfix"><strong>Total</strong><span>$200.00</span></div>
-                                                <a href="index.php?act=addtocart" class="btn_1 outline">View Cart</a><a href="index.php?act=checkout" class="btn_1">Checkout</a>
+                                                <div class="clearfix"><strong>Tổng
+                                                        tiền:</strong><span>$<?= $tong ?></span>
+                                                </div>
+                                                <a href="index.php?act=addtocart" class="btn_1 outline">Xem giỏ
+                                                    hàng</a><a href="index.php?act=checkout" class="btn_1">Thanh
+                                                    toán</a>
                                             </div>
                                         </div>
                                     </div>
@@ -206,7 +203,7 @@
                                                         đơn hàng</a>
                                                 </li>
                                                 <li>
-                                                    <a href="index.php?act=account"><i class="ti-package"></i>Đơn hàng
+                                                    <a href="index.php?act=mybill"><i class="ti-package"></i>Đơn hàng
                                                         của tôi</a>
                                                 </li>
                                                 <li>

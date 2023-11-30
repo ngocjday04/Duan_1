@@ -1,8 +1,8 @@
 <?php
-function insert_taikhoan($user_name, $email, $password)
+function insert_taikhoan($user_name, $email, $password, $address, $tel)
 {
-    $sql = "INSERT INTO users(user_name,email,password) VALUES(?,?,?)";
-    pdo_execute($sql, $user_name, $email, $password);
+    $sql = "INSERT INTO users(user_name,email,password,address,tel) VALUES(?,?,?,?,?)";
+    pdo_execute($sql, $user_name, $email, $password, $address, $tel);
 }
 function checkuser($user_name, $password)
 {

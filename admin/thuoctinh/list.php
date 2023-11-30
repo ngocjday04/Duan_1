@@ -8,55 +8,55 @@
     <link rel="stylesheet" href="../view/css/listsp.css">
     <title>Danh sách sản phẩm</title>
     <style>
-    body {
-        padding-top: 50px;
-    }
+        body {
+            padding-top: 50px;
+        }
 
-    .header-2 {
-        margin-bottom: 20px;
-    }
+        .header-2 {
+            margin-bottom: 20px;
+        }
 
-    .formcontent {
-        padding: 20px;
-        background-color: #f8f9fa;
-        border: 1px solid #dee2e6;
-        border-radius: 5px;
-    }
+        .formcontent {
+            padding: 20px;
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+        }
 
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-bottom: 20px;
-    }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
 
-    table,
-    th,
-    td {
-        border: 1px solid #dee2e6;
-    }
+        table,
+        th,
+        td {
+            border: 1px solid #dee2e6;
+        }
 
-    th,
-    td {
-        padding: 10px;
-        text-align: left;
-    }
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+        }
 
-    th {
-        background-color: #007bff;
-        color: #fff;
-    }
+        th {
+            background-color: #007bff;
+            color: #fff;
+        }
 
-    tbody tr:hover {
-        background-color: #f0f0f0;
-    }
+        tbody tr:hover {
+            background-color: #f0f0f0;
+        }
 
-    .btn-margin {
-        margin-right: 5px;
-    }
+        .btn-margin {
+            margin-right: 5px;
+        }
 
-    .custom-margin {
-        margin-top: 10px;
-    }
+        .custom-margin {
+            margin-top: 10px;
+        }
     </style>
 </head>
 
@@ -74,7 +74,6 @@
                             <tr>
                                 <th>Mã Loại</th>
                                 <th>Mã sản phẩm</th>
-                                <th>Màu sắc</th>
                                 <th>Kích cỡ</th>
                                 <th>Số lượng</th>
                                 <th></th>
@@ -84,13 +83,12 @@
                         <tbody>
                             <?php foreach ($listvariant as $variant) {
                                 extract($variant);
-                                $suatt = "index.php?act=suatt&product_id=" . $variant_id;
-                                $xoatt = "index.php?act=xoatt&product_id=" . $variant_id;
+                                $suatt = "index.php?act=suatt&idvr=" . $variant_id;
+                                $xoatt = "index.php?act=xoatt&idvr=" . $variant_id;
                                 echo '
                             <tr>
                                 <td>' . $variant_id . '</td>
                                 <td>' . $product_id . '</td>
-                                <td>' . $color . '</td>
                                 <td>' . $size . '</td>
                                 <td>' . $quantity . '</td>
                                 <td><a href="' . $suatt . '" class="btn btn-primary">Sửa</a></td>

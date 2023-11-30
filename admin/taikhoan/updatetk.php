@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <title>CẬP NHẬT TÀI KHOẢN</title>
     <style>
-    /* Thêm CSS tùy chỉnh nếu cần */
+        /* Thêm CSS tùy chỉnh nếu cần */
     </style>
 </head>
 
@@ -18,7 +18,7 @@
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header bg-info text-white">
-                        <h1 class="mb-0">THÊM TÀI KHOẢN</h1>
+                        <h1 class="mb-0">CẬP NHẬT TÀI KHOẢN</h1>
                     </div>
                     <div class="card-body">
                         <form action="index.php?act=addtk" method="post">

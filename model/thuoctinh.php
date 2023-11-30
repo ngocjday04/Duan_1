@@ -1,5 +1,5 @@
 <?php
-function insert_thuoctinh($product_id, $color, $size, $quantity)
+function insert_thuoctinh($product_id, $size, $quantity)
 {
     $product_id = (int) $product_id;
 
@@ -13,21 +13,21 @@ function insert_thuoctinh($product_id, $color, $size, $quantity)
         return;
     }
 
-    $sql = "INSERT INTO variants(product_id, color, size, quantity) VALUES ('$product_id', '$color', '$size', '$quantity')";
+    $sql = "INSERT INTO variants(product_id,size, quantity) VALUES ('$product_id', '$size', '$quantity')";
     pdo_execute($sql);
 }
 
 
 function loadone_variant($variant_id)
 {
-    $variant_id = $_GET['variant_id'];
+    $variant_id = $_GET['idvr'];
     $sql = "SELECT * FROM variants WHERE variant_id = $variant_id";
     $variants = pdo_query_one($sql);
     return $variants;
 }
 function select_variant($product_id)
 {
-    $sql = "SELECT color,size,quantity from variants where product_id = $product_id";
+    $sql = "SELECT size,quantity from variants where product_id = $product_id";
     return pdo_query($sql);
 }
 function loadall_thuoctinh()
@@ -36,9 +36,9 @@ function loadall_thuoctinh()
     $listvariant = pdo_query($sql);
     return $listvariant;
 }
-function update_thuotinh($variant_id, $product_id, $color, $size, $quantity)
+function update_thuoctinh($variant_id, $product_id, $size, $quantity)
 {
-    $sql = "UPDATE variants SET product_id = '" . $product_id . "', color='" . $color . "',size='" . $size . "',quantity='" . $quantity . "' WHERE variant_id=" . $variant_id;
+    $sql = "UPDATE variants SET product_id = '" . $product_id . "',size='" . $size . "',quantity='" . $quantity . "' WHERE variant_id=" . $variant_id;
     pdo_execute($sql);
 }
 function loadall_thuoctinh_admin($variant_id)

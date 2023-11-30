@@ -72,10 +72,14 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
                 $user_name = $_POST['user_name'];
                 $pass = $_POST['password'];
                 $email = $_POST['email'];
-                insert_taikhoan($user_name,  $email, $pass);
-                $thongbao = "Đăng ký thành công. <br> Vui lòng đăng nhập để thực hiện thêm chức năng !";
+                $address = $_POST['address'];
+                $tel = $_POST['tel'];
+                insert_taikhoan($user_name,  $email, $pass, $address, $tel);
+                // $thongbao = "Đăng ký thành công. <br> Vui lòng đăng nhập để thực hiện thêm chức năng !";
+                header('Location: index.php?act=log-in');
             }
             include "view/account/creat_account.php";
+
             break;
         case 'log-in':
             if (isset($_POST['dangnhap']) && ($_POST['dangnhap'])) {
@@ -105,12 +109,11 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
                 $tel = $_POST['tel'];
                 $address = $_POST['address'];
                 update_taikhoan($user_id, $user_name, $password, $email, $address, $tel);
-                $_SESSION['user_name'] = checkuser($user, $pass);
+                $_SESSION['user_name'] = checkuser($user_name, $password);
 
                 // update account
                 // updateuser();
-
-                header("location:index.php");
+                $thongbao = "Cập nhật thành công";
             }
             include "view/account/update_acc.php";
             break;
@@ -163,7 +166,7 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
                 }
 
                 if ($flag == 0) {
-                    $cart = [$id, $name, $image, $price, $size,  $quantity, $thanhtien];
+                    $cart = [$id, $name, $image, $price, $size, $quantity];
                     $_SESSION['mycart'][] = $cart;
                 }
                 // header("Location: index.php?act=cart");
@@ -187,24 +190,42 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
 
         case 'thanhtoan':
             if (isset($_POST['thanhtoan']) && ($_POST['thanhtoan'])) {
-                //Lấy dữ liệu
-                $tongdonhang = $_POST['tongdonhang'];
+                if (isset($_SESSION['user_name'])) $iduser = $_SESSION['user_name']['user_id'];
+                else $iduser = 0;
                 $name = $_POST['name'];
                 $address = $_POST['address'];
                 $email = $_POST['email'];
                 $tel = $_POST['tel'];
                 $pttt = $_POST['pttt'];
-                $madh = "FASHION" . rand(0, 999999);
-                //Tạo đơn hàng và trả về 1 id đơn hàng
-                $iddh = creat_donhang($madh, $tongdonhang, $pttt, $name, $address, $email, $tel);
+                date_default_timezone_set('Asia/Ho_Chi_Minh');
+                $ngaydathang = date('h:i:sa d/m/Y');
+                $tongdonhang = $_POST['tongdonhang'];
+
+                //insert bill
+                $id_bill = insert_bill($iduser, $name, $tel, $email, $address, $pttt, $tongdonhang, $ngaydathang);
+                //insert into cart :$_SESSION['mycart] &id_bill
+                foreach ($_SESSION['mycart'] as $cart) {
+
+                    insert_cart($_SESSION['user_name']['user_id'], $cart[0], $cart[2], $cart[1], $cart[3], $cart[5], $cart[4], $tongdonhang, $id_bill);
+                }
+                $_SESSION['mycart'] = [];
             }
+            $bill = loadone_bill($id_bill);
+            $billct = loadall_cart($id_bill);
             include "view/xacnhan/confirm.php";
             break;
         case 'checkout':
             include "view/giohang/checkout.php";
             break;
+        case 'mybill':
+            $listbill = loadall_bill();
+            include "view/giohang/mybill.php";
+            break;
         case 'confirm':
             include "view/xacnhan/confirm.php";
+            break;
+        case 'contact':
+            include "view/hotro/contact.php";
             break;
         case 'trackorder':
             include "view/kiemtradh/trackorder.php";

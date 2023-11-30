@@ -3,9 +3,9 @@
         <div class="page_header">
             <div class="breadcrumbs">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Category</a></li>
-                    <li>Page active</li>
+                    <li><a href="index.php">Trang chủ</a></li>
+                    <!-- <li><a href="#">Category</a></li> -->
+                    <li>Giỏ hàng</li>
                 </ul>
             </div>
             <h1>Cart page</h1>
@@ -32,8 +32,8 @@
             $tong = 0;
             $i = 0;
             foreach ($_SESSION['mycart'] as $cart) {
-                $tong += $cart[6];
-                $thanhtien = (int)($cart[3]) * (int)$cart[6];
+                $tong += $thanhtien;
+                $thanhtien = (int)($cart[3]) * (int)$cart[5];
                 $image = $image_path . $cart[2];
                 $delcart = ' <a href="index.php?act=deletecart&i=' . $i . '"><i class="ti-trash"></i></a>';
                 echo '<tr>
@@ -55,7 +55,7 @@
                        ' . $cart[4] . '
                     </td>
                     <td>
-                       $' . $cart[6] . '
+                       $' . $thanhtien . '
                     </td>
 
                     <td class="options">
@@ -92,12 +92,13 @@
 
                     <a href="index.php" class="btn_1 full-width cart">Tiếp tục mua hàng</a>
                     <a href="index.php?act=deletecart" class="btn_1 full-width cart">Xóa giỏ hàng</a>
-                    <a href="index.php?act=checkout" class="btn_1 full-width cart">Thanh toán</a>
+                    <a href="index.php?act=checkout" class="btn_1 full-width cart">Tiến hành thanh toán</a>
 
                 </div>
             </div>
         </div>
     </div>
+
     <!-- /box_cart -->
 
 </main>

@@ -3,6 +3,7 @@ include "../model/connect.php";
 include "../model/danhmuc.php";
 include "../model/binhluan.php";
 include "../model/thuoctinh.php";
+include "../model/donhang.php";
 include "../model/sanpham.php";
 include "../model/taikhoan.php";
 include "header.php";
@@ -132,7 +133,7 @@ if (isset($_GET['act'])) {
                 $address = $_POST['address'];
 
                 // insert_users($user_name, $email, $password, $tel, $address);
-                insert_taikhoan($user_name, $email, $password);
+                insert_taikhoan($user_name, $email, $password, $address, $tel);
                 $thongbao = "Thêm thành công";
             }
             include "../admin/taikhoan/addtk.php";
@@ -185,28 +186,79 @@ if (isset($_GET['act'])) {
             $listproduct = loadall_product(0, 0, 0, 0);
             if (isset($_POST['themmoitt']) && ($_POST['themmoitt'])) {
                 $product_id = $_POST['product_id'];
-                $color = $_POST['color'];
                 $size = $_POST['size'];
                 $quantity = $_POST['quantity'];
-                insert_thuoctinh($product_id, $color, $size, $quantity);
+                insert_thuoctinh($product_id, $size, $quantity);
                 $thongbao = "Thêm thành công";
             }
             include "../admin/thuoctinh/add.php";
             break;
+        case 'suatt':
+            if (isset($_GET['idvr']) && ($_GET['idvr'] > 0)) {
+                $variants = loadone_variant($_GET['idvr']);
+            }
+            $listvariant = loadall_thuoctinh();
+            include "../admin/thuoctinh/update.php";
 
+            break;
+        case 'xoatt':
+            if (isset($_GET['idvr']) && ($_GET['idvr'] > 0)) {
+                delete_thuoctinh($_GET['idvr']);
+            }
+            $listvariant = loadall_thuoctinh();
+            include "../admin/thuoctinh/list.php";
+
+            break;
         case 'update-thuoctinh':
-            $variant_id = $_GET['variant_id'];
-            $variants = loadone_variant($variant_id);
-            $listsanpham = loadall_sanpham_admin();
+            // $variant_id = $_GET['variant_id'];
+            // $variants = loadone_variant($variant_id);
+            // $listsanpham = loadall_sanpham_admin();
             if (isset($_POST['capnhattt']) && ($_POST['capnhattt'])) {
+                $variant_id = $_POST['variant_id'];
                 $product_id = $_POST['product_id'];
                 $size = $_POST['size'];
-                $color = $_POST['color'];
                 $quantity = $_POST['quantity'];
-                update_thuotinh($variant_id, $product_id, $color, $size, $quantity);
-                include "../admin/thuoctinh/update.php";
-                break;
+                update_thuoctinh($variant_id, $product_id, $size, $quantity);
             }
+            $listvariant = loadall_thuoctinh();
+            include "../admin/thuoctinh/list.php";
+            break;
+        case 'listdh':
+            if (isset($_POST['kyw']) && ($_POST['kyw'] != "")) {
+                $kyw = $_POST['kyw'];
+            } else {
+                $kyw = "";
+            }
+            $listbill = loadall_bill($kyw, 0);
+            include "../admin/quanlydonhang/listdh.php";
+            break;
+        case 'suadh':
+            if (isset($_GET['id']) && ($_GET['id'] > 0)) {
+                $bill = loadone_bill($_GET['id']);
+            }
+            $listbill = loadall_bill();
+            include "../admin/quanlydonhang/updatedh.php";
+            break;
+        case 'xoadh':
+            if (isset($_GET['id']) && ($_GET['id'] > 0)) {
+                delete_bill($_GET['id']);
+            }
+            $thongbao = "Xóa đơn hàng thành công!";
+            $listbill = loadall_bill();
+            include "../admin/quanlydonhang/listdh.php";
+
+
+            break;
+        case 'updatedh':
+            if (isset($_POST['capnhatdh']) && ($_POST['capnhatdh'])) {
+                $id = $_POST['id'];
+                $trangthai = $_POST['trangthai'];
+                update_bill($id, $trangthai);
+                $thongbao = "Cập nhật thành công !";
+            }
+            $listbill = loadall_bill();
+            include "../admin/quanlydonhang/listdh.php";
+            break;
     }
 } else {
     include "home.php";
