@@ -68,7 +68,7 @@
                                     <td><strong>$' . $bill['tongdonhang'] . '</strong></td>
                                     <td>' . $ttdh . '</td>
                                     <td>' . $bill['ngaydathang'] . '</td>
-                                    <td><a href="' . $suadh . '" class="btn btn-primary">Sửa</a><a href="' . $xoadh . '" class="btn btn-danger">Xóa</a></td>
+                                    <td><a href="' . $suadh . '" class="btn btn-primary">Sửa</a><a href="' . $xoadh . '" class="btn btn-danger">Hủy</a></td>
                                   
                                    
                                     </tr>';
@@ -79,9 +79,7 @@
 
                             </table>
                         </div>
-                        <div class="row mb custom-margin">
-                            <a href="index.php?act=adddm"><input type="button" class="btn btn-primary" value="Nhập thêm"></a>
-                        </div>
+
                     </div>
                 </div>
             </div>

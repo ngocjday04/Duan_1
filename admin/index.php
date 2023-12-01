@@ -3,6 +3,7 @@ include "../model/connect.php";
 include "../model/danhmuc.php";
 include "../model/binhluan.php";
 include "../model/thuoctinh.php";
+include "../model/thongke.php";
 include "../model/donhang.php";
 include "../model/sanpham.php";
 include "../model/taikhoan.php";
@@ -243,7 +244,7 @@ if (isset($_GET['act'])) {
             if (isset($_GET['id']) && ($_GET['id'] > 0)) {
                 delete_bill($_GET['id']);
             }
-            $thongbao = "Xóa đơn hàng thành công!";
+            $thongbao = "Hủy đơn hàng thành công!";
             $listbill = loadall_bill();
             include "../admin/quanlydonhang/listdh.php";
 
@@ -258,6 +259,13 @@ if (isset($_GET['act'])) {
             }
             $listbill = loadall_bill();
             include "../admin/quanlydonhang/listdh.php";
+            break;
+        case 'thongke':
+            $listdoanhthu = thong_ke_doanh_thu();
+            $listdonhang = thong_ke_don_hang();
+            $listsanpham = thong_ke_san_pham();
+            $listyeucau = thong_ke_yeu_cau();
+            include "../admin/thongke/list.php";
             break;
     }
 } else {
