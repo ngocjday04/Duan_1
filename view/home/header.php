@@ -61,7 +61,8 @@
                             <!-- Mobile menu button -->
                             <div class="main-menu">
                                 <div id="header_menu">
-                                    <a href="index.html"><img src="view/img/logo_black.svg" alt="" width="100" height="35"></a>
+                                    <a href="index.html"><img src="view/img/logo_black.svg" alt="" width="100"
+                                            height="35"></a>
                                     <a href="#" class="open_close" id="close_in"><i class="ti-close"></i></a>
                                 </div>
                                 <ul>
@@ -115,12 +116,12 @@
                                         <div id="menu">
                                             <ul>
                                                 <?php foreach ($listdm as $key => $dm) : ?>
-                                                    <?php extract($dm);
+                                                <?php extract($dm);
                                                     $category_dt = "index.php?act=sanpham&idct_dm=" . $category_id;
                                                     ?>
-                                                    <li><span><a href="<?= $category_dt ?>"><?= $category_name ?></a></span>
+                                                <li><span><a href="<?= $category_dt ?>"><?= $category_name ?></a></span>
 
-                                                    </li>
+                                                </li>
                                                 <?php endforeach; ?>
                                             </ul>
                                         </div>
@@ -132,8 +133,10 @@
                         <div class="col-xl-6 col-lg-7 col-md-6 d-none d-md-block">
                             <div class="custom-search-input">
                                 <form action="index.php?act=sanpham" method="post">
-                                    <input type="text" class="form-control" name="kyw" placeholder="Tìm kiếm tại đây ..." />
-                                    <button type="submit" name="timkiem"><i class="header-icon_search_custom"></i></button>
+                                    <input type="text" class="form-control" name="kyw"
+                                        placeholder="Tìm kiếm tại đây ..." />
+                                    <button type="submit" name="timkiem"><i
+                                            class="header-icon_search_custom"></i></button>
                                 </form>
                             </div>
                         </div>
@@ -142,7 +145,8 @@
 
                                 <li>
                                     <div class="dropdown dropdown-cart">
-                                        <a href="index.php?act=addtocart" class="cart_bt" id="cart_bt"><strong></strong></a>
+                                        <a href="index.php?act=addtocart" class="cart_bt"
+                                            id="cart_bt"><strong></strong></a>
                                         <div class="dropdown-menu">
                                             <ul>
                                                 <?php
@@ -154,12 +158,14 @@
                                                     $image = $image_path . $cart[2];
                                                     $delcart = ' <a href="index.php?act=deletecart&i=' . $i . '"><i class="ti-trash"></i></a>';
                                                 ?>
-                                                    <li>
-                                                        <figure><img src="<?= $image ?>" data-src="<?= $image ?>" alt="" width="50" height="50" class="lazy"></figure>
-                                                        <strong><span><?= $cart[1] ?></span><?= $cart[3] ?></strong>
-                                                        </a>
-                                                        <a href="index.php?act=deletecart&i=' . $i . '" class="action"><i class="ti-trash"></i></a>
-                                                    </li>
+                                                <li>
+                                                    <figure><img src="<?= $image ?>" data-src="<?= $image ?>" alt=""
+                                                            width="50" height="50" class="lazy"></figure>
+                                                    <strong><span><?= $cart[1] ?></span><?= $cart[3] ?></strong>
+                                                    </a>
+                                                    <a href="index.php?act=deletecart&i=' . $i . '" class="action"><i
+                                                            class="ti-trash"></i></a>
+                                                </li>
                                                 <?php endforeach; ?>
                                             </ul>
                                             <div class="total_drop">
@@ -174,9 +180,7 @@
                                     </div>
                                     <!-- /dropdown-cart-->
                                 </li>
-                                <li>
-                                    <a href="#0" class="wishlist"><span>Wishlist</span></a>
-                                </li>
+
                                 <li>
 
                                     <div class="dropdown dropdown-access">

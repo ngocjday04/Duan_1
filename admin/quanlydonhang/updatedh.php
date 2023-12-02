@@ -12,7 +12,7 @@ if (isset($bill) && is_array($bill)) {
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <title>Cập nhật sản phẩm</title>
     <style>
-    /* Thêm CSS tùy chỉnh nếu cần */
+        /* Thêm CSS tùy chỉnh nếu cần */
     </style>
 </head>
 
@@ -30,15 +30,13 @@ if (isset($bill) && is_array($bill)) {
                             <div class="form-group row mb">
                                 <label for="id" class="col-md-2 col-form-label">Mã đơn hàng:</label>
                                 <div class="col-md-10">
-                                    <input type="text" name="id" class="form-control" value="<?= $id ?>" placeholder=""
-                                        disabled>
+                                    <input type="text" name="id" class="form-control" value="<?= $id ?>" placeholder="" disabled>
                                 </div>
                             </div>
                             <div class="form-group row mb">
                                 <label for="trangthai" class="col-md-2 col-form-label">Tình trạng đơn hàng:</label>
                                 <div class="col-md-10">
-                                    <input type="text" name="trangthai" value="<?= $bill['trangthai'] ?>"
-                                        class="form-control" placeholder="">
+                                    <input type="text" name="trangthai" value="<?= $bill['trangthai'] ?>" class="form-control" placeholder="">
                                 </div>
                             </div>
                             <div class="form-group row mb">

@@ -219,7 +219,39 @@ if ((isset($_GET['act'])) && ($_GET['act'] != "")) {
             break;
         case 'mybill':
             $listbill = loadall_bill();
+            $thongbao = "Cập nhật thông tin thành công";
             include "view/giohang/mybill.php";
+            break;
+        case 'order':
+            $listbill = loadall_bill_user($_SESSION['id']['id']);
+            include "./views/order.php";
+            break;
+
+            //chi tiết đơn hàng đã đặt
+        case 'bill_detail':
+            // $id_user = $_SESSION['id']['id'];
+            $id_bill = $_GET['id'];
+            $listbill_one = loadone_bill($id_bill);
+            $list_bill_detail = loadone_bill_detail($id_bill);
+            include "view/giohang/bill_detail.php";
+            break;
+            // hủy đơn hàng
+        case 'delete_bill':
+            delete_order_detail($_GET['id']);
+            delete_order($_GET['id']);
+            header('Location: index.php?act=mybill');
+            break;
+            //     // cập nhật đơn hàng
+        case 'edit_bill':
+            $billone = loadone_bill($_GET['id']);
+            if (isset($_POST['btn'])) {
+                $name = $_POST['name'];
+                $address = $_POST['address'];
+                $tel = $_POST['tel'];
+                updatebill($name, $address, $tel, $_GET['id']);
+                header('Location: index.php?act=mybill');
+            }
+            include "view/giohang/edit_bill.php";
             break;
         case 'confirm':
             include "view/xacnhan/confirm.php";

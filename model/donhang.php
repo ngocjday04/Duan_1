@@ -26,6 +26,7 @@ function loadone_bill($id)
     $bill = pdo_query_one($sql);
     return $bill;
 }
+
 function loadall_cart($id_bill)
 {
     $sql = "SELECT * FROM cart_detail WHERE id_bill=" . $id_bill;
@@ -56,6 +57,35 @@ function delete_bill($id)
 {
     $sql = "delete from bill where id=" . $id;
     pdo_execute($sql);
+}
+function loadone_bill_detail($id)
+{
+    $sql = "select * from cart_detail where id_bill = $id";
+    $listbill = pdo_query($sql);
+    return $listbill;
+}
+function delete_order_detail($id)
+{
+    $sql = "DELETE FROM  cart_detail WHERE id_bill=" . $id;
+    pdo_execute($sql);
+}
+function loadall_bill_user($id)
+{
+    $sql = "select * from bill where id_user = $id";
+    $listbill = pdo_query($sql);
+    return $listbill;
+}
+function delete_order($id)
+{
+    $sql = "DELETE FROM  bill WHERE id=" . $id;
+    pdo_execute($sql);
+    // header("location:http://localhost/php-shop/?url=order");
+}
+function updatebill($name, $address, $tel, $id)
+{
+    $sql = "UPDATE `bill` SET`name`='$name',`address`='$address',`tel`='$tel' WHERE id = $id;";
+    pdo_execute($sql);
+    // header("location:http://localhost/php-shop/?url=order");
 }
 // function taodonhang($madh, $tongdonhang, $pttt, $name, $address, $email, $ngaydathang, $tel)
 // {

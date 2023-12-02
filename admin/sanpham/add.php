@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <title>Thêm mới sản phẩm</title>
     <style>
-    /* Thêm CSS tùy chỉnh nếu cần */
+        /* Thêm CSS tùy chỉnh nếu cần */
     </style>
 </head>
 
@@ -27,11 +27,14 @@
                                 <div class="col-md-10">
                                     <select name="category_id" id="" class="form-control">
                                         <?php foreach ($danhmuc as $category) { ?>
-                                        <?php extract($category) ?>
-                                        <option value="<?= $category_id ?>">
-                                            <?= $category_name ?></option>
+                                            <?php extract($category) ?>
+                                            <option value="<?= $category_id ?>">
+                                                <?= $category_name ?></option>
                                         <?php } ?>
                                     </select>
+                                    <?php if (isset($_GET['loaierrr'])) : ?>
+                                        <span style="color: red"><?= $_GET['loaierrr'] ?></span>
+                                    <?php endif ?>
                                 </div>
                             </div>
                             <div class="form-group row mb">
@@ -45,24 +48,32 @@
                                 <div class="col-md-10">
                                     <input type="text" name="product_name" class="form-control">
                                 </div>
+                                <?php if (isset($_GET['nameerr'])) : ?>
+                                    <span style="color: red"><?= $_GET['nameerr'] ?></span>
+                                <?php endif ?>
                             </div>
                             <div class="form-group row mb">
                                 <label for="price" class="col-md-2 col-form-label">Giá sản phẩm:</label>
                                 <div class="col-md-10">
                                     <input type="number" name="price" class="form-control">
                                 </div>
+                                <?php if (isset($_GET['priceerr'])) : ?>
+                                    <span style="color: red"><?= $_GET['priceerr'] ?></span>
+                                <?php endif ?>
                             </div>
                             <div class="form-group row mb">
                                 <label for="image" class="col-md-2 col-form-label">Hình sản phẩm:</label>
                                 <div class="col-md-10">
                                     <input type="file" name="image" class="form-control">
                                 </div>
+                                <?php if (isset($_GET['imageerr'])) : ?>
+                                    <span style="color: red"><?= $_GET['imageerr'] ?></span>
+                                <?php endif ?>
                             </div>
                             <div class="form-group row mb">
                                 <label for="description" class="col-md-2 col-form-label">Mô tả sản phẩm:</label>
                                 <div class="col-md-10">
-                                    <textarea name="description" id="" cols="30" rows="10"
-                                        class="form-control"></textarea>
+                                    <textarea name="description" id="" cols="30" rows="10" class="form-control"></textarea>
                                 </div>
                             </div>
 
@@ -74,10 +85,10 @@
                                 </div>
                             </div>
                             <?php
-                        if (isset($thongbao) && ($thongbao != "")) {
-                            echo $thongbao;
-                        }
-                        ?>
+                            if (isset($thongbao) && ($thongbao != "")) {
+                                echo $thongbao;
+                            }
+                            ?>
                         </form>
                     </div>
                 </div>

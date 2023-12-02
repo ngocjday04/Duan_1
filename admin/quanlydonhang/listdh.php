@@ -68,7 +68,7 @@
                                     <td><strong>$' . $bill['tongdonhang'] . '</strong></td>
                                     <td>' . $ttdh . '</td>
                                     <td>' . $bill['ngaydathang'] . '</td>
-                                    <td><a href="' . $suadh . '" class="btn btn-primary">Sửa</a><a href="' . $xoadh . '" class="btn btn-danger">Hủy</a></td>
+                                    <td><a href="' . $suadh . '" class="btn btn-primary">Chi tiết</a><a href="' . $xoadh . '" class="btn btn-danger" onclick="return confirm(\'Bạn có chắc muốn hủy?\')">Hủy</a></td>
                                   
                                    
                                     </tr>';

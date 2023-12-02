@@ -37,12 +37,18 @@
                                 <div class="col-md-10">
                                     <input type="text" name="size" class="form-control">
                                 </div>
+                                <?php if (isset($_GET['kichcoerr'])) : ?>
+                                    <span style="color: red"><?= $_GET['kichcoerr'] ?></span>
+                                <?php endif ?>
                             </div>
                             <div class="form-group row">
                                 <label for="quantity" class="col-md-2 col-form-label">Số lượng:</label>
                                 <div class="col-md-10">
                                     <input type="number" name="quantity" class="form-control">
                                 </div>
+                                <?php if (isset($_GET['soluongerr'])) : ?>
+                                    <span style="color: red"><?= $_GET['soluongerr'] ?></span>
+                                <?php endif ?>
                             </div>
                             <div class="form-group row">
                                 <div class="col-md-12">

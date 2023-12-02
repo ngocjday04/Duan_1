@@ -59,6 +59,12 @@ if (isset($_GET['act'])) {
                 $image = $_FILES['image']['name'];
                 $target_dir = "../upload/";
                 $target_file = $target_dir . basename($_FILES["image"]["name"]);
+                require "../model/validate.php";
+                if (!empty($nameerr)  || !empty($imageerr) || !empty($priceerr) || !empty($loaierr)) {
+
+                    header("location: ../admin/index.php?act=createsp&nameerr=$nameerr&imageerr=$imageerr&priceerr=$priceerr&loaierr=$loaierr");
+                    die;
+                }
                 if (move_uploaded_file($_FILES["image"]["tmp_name"], $target_file)) {
                     // File uploaded successfully.
                 } else {
@@ -259,6 +265,12 @@ if (isset($_GET['act'])) {
             }
             $listbill = loadall_bill();
             include "../admin/quanlydonhang/listdh.php";
+            break;
+        case 'chitietdh':
+            $bill_detail = loadone_bill_detail($_GET['id']);
+            // $cart = loadall_cart($id_user);
+            include "./hoadon/billdetail.php";
+
             break;
         case 'thongke':
             $listdoanhthu = thong_ke_doanh_thu();
